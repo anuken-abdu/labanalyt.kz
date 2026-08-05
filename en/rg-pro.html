@@ -7,16 +7,16 @@
 ================================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RG Pro Spectrometer — Lightnovo | LabAnalyt</title>
-<meta name="description" content="Low-frequency spectrometer: 25–4000 cm⁻¹ in one instrument. Supply, installation and service in Astana and across Kazakhstan.">
+<title>RG Pro Raman Spectrometer — Lightnovo | LabAnalyt</title>
+<meta name="description" content="Flagship ultra-high accuracy spectrometer with cooled detector. Supply, installation and service in Astana and across Kazakhstan.">
 <link rel="canonical" href="https://labanalyt.kz/en/rg-pro.html">
 <link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-pro.html">
 <link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-pro.html">
 <link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-pro.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
-<meta property="og:title" content="RG Pro Spectrometer — Lightnovo | LabAnalyt">
-<meta property="og:description" content="Low-frequency spectrometer: 25–4000 cm⁻¹ in one instrument. Supply, installation and service in Astana and across Kazakhstan.">
+<meta property="og:title" content="RG Pro Raman Spectrometer — Lightnovo | LabAnalyt">
+<meta property="og:description" content="Flagship ultra-high accuracy spectrometer with cooled detector. Supply, installation and service in Astana and across Kazakhstan.">
 <meta property="og:image" content="../images/og-banner.jpg">
 <meta property="og:url" content="https://labanalyt.kz/en/rg-pro.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -60,20 +60,28 @@
   /* логотипы */
   .logo{height:40px;width:auto;display:block;max-width:230px}
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
+  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
-  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
-  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
-  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
   .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
-  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  @media(min-width:1024px){.h-sec{font-size:25px}}
+  .mt-s{margin-top:14px}.mt-l{margin-top:28px}.mb-s{margin-bottom:12px}
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
-  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
+  @media(min-width:1024px){.tagline{font-size:18px}}
+  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
+  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
+  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
+  .acclist{list-style:none;padding:0;margin:0}
+  .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
+  .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
@@ -111,31 +119,29 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="../products.html" class="backlink">← Equipment</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · Low-frequency Raman spectroscopy</p>
-<h1 class="t-h2">RG Pro Spectrometer</h1>
-<p class="t-body mt-3 max-w-3xl">The most advanced spectrometer in the RG line. A 25 cm⁻¹ cut-off opens up low-frequency modes hidden from conventional systems: the THz and fingerprint regions are acquired simultaneously across 25–4000 cm⁻¹. The modular housing is ready for benchtop work, microscope platforms and OEM integration.</p>
+<p class="t-eyebrow mt-s mb-2">Lightnovo · Research spectrometers</p>
+<h1 class="t-h2">RG Pro Raman Spectrometer</h1>
+<p class="tagline">Flagship research Raman spectrometer of ultra-high accuracy</p>
+<p class="t-body mt-3 max-w-3xl">Lightnovo’s top portable Raman spectrometer series for the most uncompromising research and industrial tasks. The Pro instruments combine high-efficiency transmission diffraction optics at up to 85% throughput, deeply cooled detectors and higher-power lasers — delivering an exceptional signal-to-noise ratio, the highest data stability and record spectral resolution.</p>
 <div class="g-photo mt-l">
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-01.webp — product photo</span><img src="../images/rg-pro-01.webp" alt="RG Pro Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-02.webp — product photo</span><img src="../images/rg-pro-02.webp" alt="RG Pro Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-03.webp — product photo</span><img src="../images/rg-pro-03.webp" alt="RG Pro Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-01.webp — product photo</span><img src="../images/rg-pro-01.webp" alt="RG Pro Raman Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-02.webp — product photo</span><img src="../images/rg-pro-02.webp" alt="RG Pro Raman Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-03.webp — product photo</span><img src="../images/rg-pro-03.webp" alt="RG Pro Raman Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Models and configurations</h2>
+<h2 class="h-sec mt-l mb-s">Key advantages</h2>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Ultra-high spectral resolution</h3><p class="t-sm">Down to 1.8 cm⁻¹ depending on model and slit configuration — confident separation of closely spaced peaks and analysis of fine crystal structure.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Deep detector cooling</h3><p class="t-sm">Thermoelectric cooling minimises detector thermal noise — critical for very weak signals and long integration times.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Maximum optical throughput</h3><p class="t-sm">Up to 85% transmission efficiency gives a signal-to-noise ratio of up to 5000:1 and beyond.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Patented calibration</h3><p class="t-sm">The built-in reference channel continuously compensates laser drift — absolute wavenumber accuracy measurement after measurement.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Broad spectral range</h3><p class="t-sm">Covers both the low-frequency region from 70 cm⁻¹ and high-frequency modes up to 3700 cm⁻¹.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Models and specifications</h2>
 <div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG Pro 785 nm</h3><p class="t-sm">The core low-frequency configuration, minimal fluorescence.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG Pro 532 nm</h3><p class="t-sm">For 2D materials and semiconductors, higher signal.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG Pro 633 nm</h3><p class="t-sm">An intermediate configuration for complex matrices.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Pro 532</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">532 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">10–100 mW</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">80–3700 cm⁻¹ (80–2040 cm⁻¹ HR)</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">from 2.3 cm⁻¹ (HR)</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">up to 5000:1</span></div><div class="specrow"><span class="speck">Detector cooling</span><span class="specv">Thermoelectric</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Pro 638</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">638 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">5–75 mW (over 330 mW in Power version)</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">70–3700 cm⁻¹</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">from 3.5 cm⁻¹</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">up to 3000:1</span></div><div class="specrow"><span class="speck">Detector cooling</span><span class="specv">Thermoelectric</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Pro 785</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">785 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">5–95 mW (over 500 mW in Power version)</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">70–2100 cm⁻¹</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">from 1.8 cm⁻¹</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">up to 3500:1</span></div><div class="specrow"><span class="speck">Detector cooling</span><span class="specv">Thermoelectric</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Pro 830</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">830 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">5–70 mW (over 500 mW in Power version)</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">70–2400 cm⁻¹</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">from 1.8 cm⁻¹</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">up to 2500:1</span></div><div class="specrow"><span class="speck">Detector cooling</span><span class="specv">Thermoelectric</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Specifications</h2>
-<div class="g-specs">
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Cut-off</div><div class="t-h3 mt-1">25 cm⁻¹</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Spectral range</div><div class="t-h3 mt-1">25–4000 cm⁻¹</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Standards</div><div class="t-h3 mt-1">ASTM E1840 and ASTM E2529</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Form factor</div><div class="t-h3 mt-1">Benchtop, microscope-mounted, OEM module</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Compatibility</div><div class="t-h3 mt-1">RG microscope platform</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Software</div><div class="t-h3 mt-1">Miraspec and MiraspecFlow</div></div>
-</div>
+<div class="notebox mt-s">Customisation to order: a higher-power laser for weakly scattering and bulk samples; a precision low-power mode from fractions of a mW to protect photo- and heat-sensitive samples; line focus for uniform excitation of heterogeneous samples; a shock-proof sealed Operator housing for harsh industrial and field conditions.</div>
 <h2 class="h-sec mt-l mb-s">Applications</h2>
-<div class="taglist"><span class="tag">2D materials (graphene, MoS₂)</span><span class="tag">Pharmaceutical polymorphs</span><span class="tag">Semiconductors</span><span class="tag">Polymers</span><span class="tag">Battery materials</span><span class="tag">Mineralogy</span></div>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Advanced scientific research</h3><p class="t-sm">Solid-state physics, nanotechnology, graphene, semiconductors, quantum dots.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Pharmaceuticals and fine organic synthesis</h3><p class="t-sm">Phase transitions, polymorphs, isomers and crystal hydrates.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Biomedicine and SERS spectroscopy</h3><p class="t-sm">Ultra-sensitive analysis of trace toxins, tumour markers and liquid biopsies.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Forensics and security</h3><p class="t-sm">Non-destructive rapid analysis of trace narcotics, explosives and hazardous chemicals.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Accessories and options</h2>
+<ul class="acclist"><li>High-precision RG confocal microscope platform</li><li>Remote immersion, contact and non-contact optical probes</li><li>Holders and adapters for vials, capillaries and tablets</li><li>Protective cases for safe transportation</li></ul>
 <div class="ctabox mt-l"><h2 class="h-sec">Need help choosing a configuration?</h2><p class="t-body mt-2 max-w-3xl">We will match the configuration to your samples and quote delivery to Astana and across Kazakhstan.</p><div class="ctarow"><button onclick="openLead('Equipment (instrument)')" class="btn">Request a quote</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Message on WhatsApp</a></div></div>
 </div></main>
 <footer class="mt-auto" style="background:var(--ink)">

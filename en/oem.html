@@ -7,16 +7,16 @@
 ================================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OEM Solutions — Lightnovo | LabAnalyt</title>
-<meta name="description" content="Raman modules for integration into your instruments. Supply, installation and service in Astana and across Kazakhstan.">
+<title>Lightnovo OEM Solutions — Lightnovo | LabAnalyt</title>
+<meta name="description" content="Modular Raman blocks for integration into your equipment. Supply, installation and service in Astana and across Kazakhstan.">
 <link rel="canonical" href="https://labanalyt.kz/en/oem.html">
 <link rel="alternate" hreflang="ru" href="https://labanalyt.kz/oem.html">
 <link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/oem.html">
 <link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/oem.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
-<meta property="og:title" content="OEM Solutions — Lightnovo | LabAnalyt">
-<meta property="og:description" content="Raman modules for integration into your instruments. Supply, installation and service in Astana and across Kazakhstan.">
+<meta property="og:title" content="Lightnovo OEM Solutions — Lightnovo | LabAnalyt">
+<meta property="og:description" content="Modular Raman blocks for integration into your equipment. Supply, installation and service in Astana and across Kazakhstan.">
 <meta property="og:image" content="../images/og-banner.jpg">
 <meta property="og:url" content="https://labanalyt.kz/en/oem.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -60,20 +60,28 @@
   /* логотипы */
   .logo{height:40px;width:auto;display:block;max-width:230px}
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
+  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
-  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
-  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
-  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
   .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
-  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  @media(min-width:1024px){.h-sec{font-size:25px}}
+  .mt-s{margin-top:14px}.mt-l{margin-top:28px}.mb-s{margin-bottom:12px}
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
-  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
+  @media(min-width:1024px){.tagline{font-size:18px}}
+  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
+  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
+  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
+  .acclist{list-style:none;padding:0;margin:0}
+  .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
+  .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
@@ -111,32 +119,29 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="../products.html" class="backlink">← Equipment</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · OEM integration</p>
-<h1 class="t-h2">OEM Solutions</h1>
-<p class="t-body mt-3 max-w-3xl">Integration of Lightnovo Raman spectroscopy and microscopy into customer equipment: compact modules ready to fit production lines, quality-control instruments and specialised systems. Optics, lasers and housing are adapted to the application and to the host product envelope.</p>
+<p class="t-eyebrow mt-s mb-2">Lightnovo · OEM and integration</p>
+<h1 class="t-h2">Lightnovo OEM Solutions</h1>
+<p class="tagline">Modular Raman spectroscopy blocks for manufacturers and system integrators</p>
+<p class="t-body mt-3 max-w-3xl">Scalable OEM components and ready optical blocks for companies developing their own analytical instruments, embedded industrial systems and research platforms. The portfolio spans every spectrometer series — miniRaman, miniRaman Pro, RG and RG Pro — from basic spectrographs to complete optical modules with lasers and microscopy.</p>
 <div class="g-photo mt-l">
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-01.webp — product photo</span><img src="../images/oem-01.webp" alt="OEM Solutions" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-02.webp — product photo</span><img src="../images/oem-02.webp" alt="OEM Solutions" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-03.webp — product photo</span><img src="../images/oem-03.webp" alt="OEM Solutions" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-01.webp — product photo</span><img src="../images/oem-01.webp" alt="Lightnovo OEM Solutions" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-02.webp — product photo</span><img src="../images/oem-02.webp" alt="Lightnovo OEM Solutions" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-03.webp — product photo</span><img src="../images/oem-03.webp" alt="Lightnovo OEM Solutions" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Models and configurations</h2>
+<h2 class="h-sec mt-l mb-s">Key advantages</h2>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Patented auto-calibration</h3><p class="t-sm">The built-in reference channel continuously compensates laser wavelength drift — the end device needs no routine manual calibration.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Ultra-compact footprint</h3><p class="t-sm">A full research-grade Raman spectrometer fits even into portable and small-format instruments.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Flexible hardware support</h3><p class="t-sm">Optional Universal OEM Board with SDK support for rapid development of your own software.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">High optical efficiency</h3><p class="t-sm">Up to 85–89% signal transmission from sample to detector thanks to transmission gratings.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Models and specifications</h2>
 <div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3 mb-1">miniRaman-based OEM module</h3><p class="t-sm">Minimal size and weight, battery power, USB-C or Bluetooth.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG-based OEM module</h3><p class="t-sm">Research grade: high resolution and stable laser power.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Low-frequency OEM module (RG Pro)</h3><p class="t-sm">Access down to 25 cm⁻¹ for polymorph and structure control.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Custom development</h3><p class="t-sm">Bespoke optical layout, housing and control protocol.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-</div>
-<h2 class="h-sec mt-l mb-s">Specifications</h2>
-<div class="g-specs">
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Base platforms</div><div class="t-h3 mt-1">miniRaman, RG, RG Pro</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Interfaces</div><div class="t-h3 mt-1">USB-C, Bluetooth, software API</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Lasers</div><div class="t-h3 mt-1">405, 532, 633, 660, 785 nm — as required</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Calibration</div><div class="t-h3 mt-1">Built-in reference channel, auto-calibration</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Adaptation</div><div class="t-h3 mt-1">Optics, housing and mounts for the host product</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Support</div><div class="t-h3 mt-1">Integration support and training</div></div>
+<div class="card p-3.5"><h3 class="t-h3">1. Spectrograph Module</h3><div class="spectbl"><div class="specrow"><span class="speck">Purpose</span><span class="specv">A compact optical block with detector for integration into third-party analytical setups</span></div><div class="specrow"><span class="speck">Included</span><span class="specv">High-efficiency spectrograph, chosen detector configuration, factory optical calibration, technical documentation</span></div><div class="specrow"><span class="speck">Applications</span><span class="specv">OEM instruments, embedded spectral systems, specialised research setups</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">2. Spectrograph + LBDS</h3><div class="spectbl"><div class="specrow"><span class="speck">Purpose</span><span class="specv">A complete Raman Engine module ready for integration into industrial and laboratory instruments</span></div><div class="specrow"><span class="speck">Included</span><span class="specv">Spectrograph, laser beam delivery system (LBDS), patented constant calibration where applicable, full factory Raman calibration</span></div><div class="specrow"><span class="speck">Applications</span><span class="specv">In-line and at-line industrial analysers, custom analytical platforms</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">3. Spectrograph + LBDS + microscopy optics</h3><div class="spectbl"><div class="specrow"><span class="speck">Purpose</span><span class="specv">A ready opto-mechanical block for Raman microscopes and hyperspectral mapping systems</span></div><div class="specrow"><span class="speck">Included</span><span class="specv">Spectrograph, laser delivery system, microscope adapters and focusing optics, factory alignment and calibration</span></div><div class="specrow"><span class="speck">Applications</span><span class="specv">Research Raman microscopes, biomedical scanners, materials imaging systems</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">miniRaman / MRs Pro platform</h3><div class="spectbl"><div class="specrow"><span class="speck">Features</span><span class="specv">Ultra-compact OEM modules based on patented constant calibration technology</span></div><div class="specrow"><span class="speck">Wavelengths</span><span class="specv">660 nm and 785 nm</span></div><div class="specrow"><span class="speck">Size and weight</span><span class="specv">from 50 × 20 × 12 mm, spectrograph only about 30 g</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG / RG Pro platform</h3><div class="spectbl"><div class="specrow"><span class="speck">Features</span><span class="specv">Research OEM modules with high optical throughput, up to 85% efficiency, and low-frequency range</span></div><div class="specrow"><span class="speck">Detectors and lasers</span><span class="specv">Cooled detectors; lasers at 405, 532, 638, 785, 830 nm</span></div><div class="specrow"><span class="speck">Result</span><span class="specv">High spectral detail and signal-to-noise ratio</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
 </div>
 <h2 class="h-sec mt-l mb-s">Applications</h2>
-<div class="taglist"><span class="tag">Production lines</span><span class="tag">Quality control</span><span class="tag">Medical devices</span><span class="tag">Security systems</span><span class="tag">Research instruments</span></div>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Industrial process control</h3><p class="t-sm">Continuous monitoring of chemical reactions and quality on production lines.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Medical and bio-diagnostic equipment</h3><p class="t-sm">Portable tissue scanners, biofluid analysers, rapid diagnostics.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Portable security instruments</h3><p class="t-sm">Embedded modules for detection of hazardous, narcotic and explosive substances.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Laboratory automation</h3><p class="t-sm">Integration of a Raman channel into dosing stations, microfluidic chips and robotic platforms.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Accessories and options</h2>
+<ul class="acclist"><li>Three standardised integration levels — from spectrograph to complete microscopy block</li><li>Universal OEM Board with SDK</li><li>Factory optical and Raman calibration of every module</li><li>Integration support and technical documentation</li></ul>
 <div class="ctabox mt-l"><h2 class="h-sec">Need help choosing a configuration?</h2><p class="t-body mt-2 max-w-3xl">We will match the configuration to your samples and quote delivery to Astana and across Kazakhstan.</p><div class="ctarow"><button onclick="openLead('Equipment (instrument)')" class="btn">Request a quote</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Message on WhatsApp</a></div></div>
 </div></main>
 <footer class="mt-auto" style="background:var(--ink)">

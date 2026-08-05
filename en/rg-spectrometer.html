@@ -7,16 +7,16 @@
 ================================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RG Spectrometer — Lightnovo | LabAnalyt</title>
-<meta name="description" content="Compact research-grade spectrometer. Supply, installation and service in Astana and across Kazakhstan.">
+<title>RG Raman Spectrometer — Lightnovo | LabAnalyt</title>
+<meta name="description" content="Research-grade high-resolution spectrometer, 5 laser wavelengths. Supply, installation and service in Astana and across Kazakhstan.">
 <link rel="canonical" href="https://labanalyt.kz/en/rg-spectrometer.html">
 <link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-spectrometer.html">
 <link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-spectrometer.html">
 <link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-spectrometer.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
-<meta property="og:title" content="RG Spectrometer — Lightnovo | LabAnalyt">
-<meta property="og:description" content="Compact research-grade spectrometer. Supply, installation and service in Astana and across Kazakhstan.">
+<meta property="og:title" content="RG Raman Spectrometer — Lightnovo | LabAnalyt">
+<meta property="og:description" content="Research-grade high-resolution spectrometer, 5 laser wavelengths. Supply, installation and service in Astana and across Kazakhstan.">
 <meta property="og:image" content="../images/og-banner.jpg">
 <meta property="og:url" content="https://labanalyt.kz/en/rg-spectrometer.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -60,20 +60,28 @@
   /* логотипы */
   .logo{height:40px;width:auto;display:block;max-width:230px}
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
+  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
-  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
-  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
-  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
   .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
-  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  @media(min-width:1024px){.h-sec{font-size:25px}}
+  .mt-s{margin-top:14px}.mt-l{margin-top:28px}.mb-s{margin-bottom:12px}
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
-  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
+  @media(min-width:1024px){.tagline{font-size:18px}}
+  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
+  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
+  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
+  .acclist{list-style:none;padding:0;margin:0}
+  .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
+  .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
@@ -111,32 +119,30 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="../products.html" class="backlink">← Equipment</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · Raman spectroscopy</p>
-<h1 class="t-h2">RG Spectrometer</h1>
-<p class="t-body mt-3 max-w-3xl">A research-grade benchtop Raman spectrometer in an extremely compact housing. Built on transmission diffraction optics with up to 85% throughput from sample to detector: high spectral resolution, stable laser power and a broad range from low- to high-frequency Raman shift.</p>
+<p class="t-eyebrow mt-s mb-2">Lightnovo · Research spectrometers</p>
+<h1 class="t-h2">RG Raman Spectrometer</h1>
+<p class="tagline">Research-grade high-resolution Raman spectrometer</p>
+<p class="t-body mt-3 max-w-3xl">A series of portable research-grade Raman spectrometers for the most demanding analytical tasks: high spectral resolution, a broad range covering the low-frequency region, and high sensitivity. The technology is based on transmission diffraction optics with up to 85% throughput from sample to detector.</p>
 <div class="g-photo mt-l">
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-spectrometer-01.webp — product photo</span><img src="../images/rg-spectrometer-01.webp" alt="RG Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-spectrometer-02.webp — product photo</span><img src="../images/rg-spectrometer-02.webp" alt="RG Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-spectrometer-03.webp — product photo</span><img src="../images/rg-spectrometer-03.webp" alt="RG Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-spectrometer-01.webp — product photo</span><img src="../images/rg-spectrometer-01.webp" alt="RG Raman Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-spectrometer-02.webp — product photo</span><img src="../images/rg-spectrometer-02.webp" alt="RG Raman Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-spectrometer-03.webp — product photo</span><img src="../images/rg-spectrometer-03.webp" alt="RG Raman Spectrometer" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Models and configurations</h2>
+<h2 class="h-sec mt-l mb-s">Key advantages</h2>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">High optical efficiency</h3><p class="t-sm">Transmission diffraction optics deliver up to 85% system throughput and a signal-to-noise ratio of 1200:1 and above.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">High spectral resolution</h3><p class="t-sm">Separates closely spaced spectral peaks and enables polymorph analysis.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Broad spectral range</h3><p class="t-sm">Covers shifts from the low-frequency region up to 3700 cm⁻¹.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Versatile excitation</h3><p class="t-sm">Five laser types from 405 nm to near-infrared 830 nm for different sample types.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Portable research format</h3><p class="t-sm">Only 1.5 kg at 257 × 110 × 61 mm.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Models and specifications</h2>
 <div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG 405 nm</h3><p class="t-sm">Extended range up to 3700 cm⁻¹, for resonance applications.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG 532 nm</h3><p class="t-sm">General-purpose configuration for materials science and 2D materials.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG 633 nm</h3><p class="t-sm">A balance between signal strength and sample fluorescence.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG 785 nm</h3><p class="t-sm">Minimal fluorescence, 50–2500 cm⁻¹ range.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Raman 405</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">405 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">10–70 mW</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">90–3700 cm⁻¹</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">4 / 5 / 6 cm⁻¹</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">1000:1</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Raman 532</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">532 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">10–100 mW</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">80–3700 cm⁻¹ (80–2040 cm⁻¹ HR)</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">4 / 5 / 6 cm⁻¹ (2.3 / 3 / 3.7 cm⁻¹ HR)</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">1200:1</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Raman 638</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">638 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">5–75 mW (over 330 mW in Power version)</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">70–3700 cm⁻¹</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">4 / 5 / 6 cm⁻¹</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">1000:1</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Raman 785</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">785 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">5–95 mW (over 500 mW in Power version)</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">70–2100 cm⁻¹</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">3 / 4 / 5 cm⁻¹</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">1000:1, up to 3000:1</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">RG Raman 830</h3><div class="spectbl"><div class="specrow"><span class="speck">Laser</span><span class="specv">830 nm</span></div><div class="specrow"><span class="speck">Power at sample</span><span class="specv">5–70 mW (over 500 mW in Power version)</span></div><div class="specrow"><span class="speck">Spectral range</span><span class="specv">70–2400 cm⁻¹</span></div><div class="specrow"><span class="speck">Resolution</span><span class="specv">3 / 4 / 5 cm⁻¹</span></div><div class="specrow"><span class="speck">SNR</span><span class="specv">900:1, up to 2500:1</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Specifications</h2>
-<div class="g-specs">
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Lasers</div><div class="t-h3 mt-1">405, 532, 633 or 785 nm (by model)</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Spectral range</div><div class="t-h3 mt-1">50–2500 cm⁻¹ (785 nm), up to 3700 cm⁻¹ (405 / 532 / 633 nm)</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Spectral resolution</div><div class="t-h3 mt-1">2–4 or 3–5 cm⁻¹</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Signal-to-noise ratio</div><div class="t-h3 mt-1">up to 1200:1</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Dimensions</div><div class="t-h3 mt-1">145 × 120 × 50 mm</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Control</div><div class="t-h3 mt-1">PC (Windows) and Android</div></div>
-</div>
+<div class="notebox mt-s">Made-to-order options: laser attenuation down to fractions of a mW for light-sensitive samples; a higher-power version for very weak Raman signals; line focus instead of spot focus to prevent local heating of inhomogeneous samples; a rugged Operator housing with IP67 protection and drop resistance.</div>
 <h2 class="h-sec mt-l mb-s">Applications</h2>
-<div class="taglist"><span class="tag">Materials science</span><span class="tag">Semiconductors</span><span class="tag">2D materials</span><span class="tag">Pharmaceuticals</span><span class="tag">Polymers</span><span class="tag">Battery materials</span><span class="tag">Mineralogy</span></div>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Academic and industrial R&amp;D</h3><p class="t-sm">Advanced materials, polymers, nanostructures, graphene.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Pharmaceutical analysis</h3><p class="t-sm">Crystal structure identification, phase transitions and polymorphism.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Biomedical research</h3><p class="t-sm">SERS analysis, biological tissue and liquid biopsy studies.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Expert examination and forensics</h3><p class="t-sm">Non-destructive analysis of toxins, explosives, pigments and works of art.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Accessories and options</h2>
+<ul class="acclist"><li>Remote immersion and non-contact optical probes</li><li>Adapters for liquid and powder samples in vials</li><li>Calibration standards: polystyrene, calcite</li><li>Compatible with the RG confocal microscope platform</li></ul>
 <div class="ctabox mt-l"><h2 class="h-sec">Need help choosing a configuration?</h2><p class="t-body mt-2 max-w-3xl">We will match the configuration to your samples and quote delivery to Astana and across Kazakhstan.</p><div class="ctarow"><button onclick="openLead('Equipment (instrument)')" class="btn">Request a quote</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Message on WhatsApp</a></div></div>
 </div></main>
 <footer class="mt-auto" style="background:var(--ink)">

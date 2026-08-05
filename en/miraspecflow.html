@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MiraspecFlow Software — Lightnovo | LabAnalyt</title>
-<meta name="description" content="A management platform for Raman workflows. Supply, installation and service in Astana and across Kazakhstan.">
+<meta name="description" content="Platform for standardised workflows and reporting. Supply, installation and service in Astana and across Kazakhstan.">
 <link rel="canonical" href="https://labanalyt.kz/en/miraspecflow.html">
 <link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspecflow.html">
 <link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspecflow.html">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
 <meta property="og:title" content="MiraspecFlow Software — Lightnovo | LabAnalyt">
-<meta property="og:description" content="A management platform for Raman workflows. Supply, installation and service in Astana and across Kazakhstan.">
+<meta property="og:description" content="Platform for standardised workflows and reporting. Supply, installation and service in Astana and across Kazakhstan.">
 <meta property="og:image" content="../images/og-banner.jpg">
 <meta property="og:url" content="https://labanalyt.kz/en/miraspecflow.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -60,20 +60,28 @@
   /* логотипы */
   .logo{height:40px;width:auto;display:block;max-width:230px}
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
+  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
-  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
-  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
-  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
   .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
-  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  @media(min-width:1024px){.h-sec{font-size:25px}}
+  .mt-s{margin-top:14px}.mt-l{margin-top:28px}.mb-s{margin-bottom:12px}
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
-  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
+  @media(min-width:1024px){.tagline{font-size:18px}}
+  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
+  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
+  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
+  .acclist{list-style:none;padding:0;margin:0}
+  .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
+  .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
@@ -113,29 +121,25 @@
 <a href="../products.html" class="backlink">← Equipment</a>
 <p class="t-eyebrow mt-s mb-2">Lightnovo · Software</p>
 <h1 class="t-h2">MiraspecFlow Software</h1>
-<p class="t-body mt-3 max-w-3xl">An end-to-end platform: acquisition workflows, fleet management, system health monitoring and data synchronisation between spectrometer, PC and cloud. Built for industrial deployments, quality control and field operations where reproducibility and access control matter.</p>
+<p class="tagline">Management and data analysis platform for standardised Raman spectroscopy</p>
+<p class="t-body mt-3 max-w-3xl">A next-generation software platform for end-to-end control of Raman spectrometers, measurement automation, chemometric model training and structured reporting. Unlike classic software, MiraspecFlow uses a stepper workflow that guides the operator from experiment setup to a finished protocol. The platform is designed for regulated industries and the GxP and 21 CFR Part 11 standards.</p>
 <div class="g-photo mt-l">
 <div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspecflow-01.webp — product photo</span><img src="../images/miraspecflow-01.webp" alt="MiraspecFlow Software" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspecflow-02.webp — product photo</span><img src="../images/miraspecflow-02.webp" alt="MiraspecFlow Software" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspecflow-03.webp — product photo</span><img src="../images/miraspecflow-03.webp" alt="MiraspecFlow Software" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Models and configurations</h2>
+<h2 class="h-sec mt-l mb-s">Key advantages</h2>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Step-by-step standard operating procedures</h3><p class="t-sm">A single cycle: experiment → preprocessing → model → analysis → report. Minimises operator error and ensures reproducibility.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Compliance ready</h3><p class="t-sm">Role-based access (Admin, Developer, Operator), a non-editable audit trail and electronic signature support.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Model deployment to instruments</h3><p class="t-sm">Validated chemometric models load directly onto portable instruments for standalone identification without a PC.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Centralised project management</h3><p class="t-sm">Method templating, analysis lifecycle tracking and spectrometer synchronisation.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Data preprocessing</h3><p class="t-sm">Spike removal, smoothing (Whittaker, Savitzky-Golay, Asymmetric Least Squares), baseline correction (Rubberband, Rolling Circle, AIRLS), normalisation (MinMax, Mean Centre, Unit Norm L1/L2, Z-score).</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Analytics and identification</h3><p class="t-sm">Search across STJapan and custom libraries, mixture identification, classification with Random Forest, SVM, Naïve Bayes and Decision Tree for pass/fail verdicts, quantification with PLS, PCR, MCR-ALS and SIMPLISMA-NNLS.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Automatic report generation</h3><p class="t-sm">Structured electronic reports with electronic signature approval and export for archiving and printing.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Models and specifications</h2>
 <div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Standard edition</h3><p class="t-sm">Routine acquisition and spectral preprocessing: educational and in-house labs.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Advanced edition</h3><p class="t-sm">Advanced analysis and chemometrics: model training and result visualisation.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Premium</h3><p class="t-sm">The full platform: SOPs and project templates, role-based access, reporting, multi-device deployments. One-off licence with 12 months of support and updates, spectrometers only.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-</div>
-<h2 class="h-sec mt-l mb-s">Specifications</h2>
-<div class="g-specs">
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Fleet management</div><div class="t-h3 mt-1">System health and status monitoring</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Workflows</div><div class="t-h3 mt-1">SOPs and project templates from validated methods</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Access control</div><div class="t-h3 mt-1">Role-based interface restrictions</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Data</div><div class="t-h3 mt-1">Collection, storage, PC and cloud synchronisation</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Reporting</div><div class="t-h3 mt-1">Comprehensive identification report system</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Limitation</div><div class="t-h3 mt-1">Microscope systems run on legacy Miraspec</div></div>
+<div class="card p-3.5"><h3 class="t-h3">Standard</h3><div class="spectbl"><div class="specrow"><span class="speck">For whom</span><span class="specv">Standard measurements</span></div><div class="specrow"><span class="speck">Functionality</span><span class="specv">Spectral acquisition, basic preprocessing, library identification, logging</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Pro</h3><div class="spectbl"><div class="specrow"><span class="speck">For whom</span><span class="specv">Method developers and researchers</span></div><div class="specrow"><span class="speck">Functionality</span><span class="specv">Everything in Standard, plus chemometric model creation and training, classification, quantitative PLS/PCR analysis, MCR</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Premium (Operator)</h3><div class="spectbl"><div class="specrow"><span class="speck">For whom</span><span class="specv">Regulated production and QC laboratories</span></div><div class="specrow"><span class="speck">Functionality</span><span class="specv">Everything in Pro, plus advanced device management, reports with electronic signature, mobile application sync</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
 </div>
 <h2 class="h-sec mt-l mb-s">Applications</h2>
-<div class="taglist"><span class="tag">Industrial production</span><span class="tag">Quality control</span><span class="tag">Field operations</span><span class="tag">Security</span><span class="tag">Centralised workflows</span></div>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Pharmaceutical industry</h3><p class="t-sm">Raw material identification, finished dosage form release testing, cleaning validation to GxP standards.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Industrial quality control</h3><p class="t-sm">Rapid analysis of chemical reagents, polymer feedstock, food ingredients and beverages.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Forensics and customs control</h3><p class="t-sm">Standalone profiles for rapid detection of counterfeits, narcotics and precursors.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Accessories and options</h2>
+<ul class="acclist"><li>Role model: Admin, Developer, Operator</li><li>Non-editable audit trail</li><li>Electronic signatures on reports</li><li>Synchronisation with the mobile application and portable instruments</li></ul>
 <div class="ctabox mt-l"><h2 class="h-sec">Need help choosing a configuration?</h2><p class="t-body mt-2 max-w-3xl">We will match the configuration to your samples and quote delivery to Astana and across Kazakhstan.</p><div class="ctarow"><button onclick="openLead('Equipment (instrument)')" class="btn">Request a quote</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Message on WhatsApp</a></div></div>
 </div></main>
 <footer class="mt-auto" style="background:var(--ink)">
