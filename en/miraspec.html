@@ -7,18 +7,18 @@
 ================================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Laboratory equipment service | LabAnalyt</title>
-<meta name="description" content="Installation, repair, maintenance and IQ/OQ/PQ qualification of laboratory equipment in Astana.">
-<link rel="canonical" href="https://labanalyt.kz/en/service.html">
-<link rel="alternate" hreflang="ru" href="https://labanalyt.kz/service.html">
-<link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/service.html">
-<link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/service.html">
+<title>Miraspec Software — Lightnovo | LabAnalyt</title>
+<meta name="description" content="Native software for instrument control and spectral processing. Supply, installation and service in Astana and across Kazakhstan.">
+<link rel="canonical" href="https://labanalyt.kz/en/miraspec.html">
+<link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspec.html">
+<link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspec.html">
+<link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miraspec.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
-<meta property="og:title" content="Laboratory equipment service | LabAnalyt">
-<meta property="og:description" content="Installation, repair, maintenance and IQ/OQ/PQ qualification of laboratory equipment in Astana.">
+<meta property="og:title" content="Miraspec Software — Lightnovo | LabAnalyt">
+<meta property="og:description" content="Native software for instrument control and spectral processing. Supply, installation and service in Astana and across Kazakhstan.">
 <meta property="og:image" content="../images/og-banner.jpg">
-<meta property="og:url" content="https://labanalyt.kz/en/service.html">
+<meta property="og:url" content="https://labanalyt.kz/en/miraspec.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <link rel="apple-touch-icon" href="../images/favicon.png">
@@ -63,6 +63,19 @@
   .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
   @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
+  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
+  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
+  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  .backlink{font-size:13px;font-weight:700;color:var(--accent)}
+  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
+  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
+  .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -72,14 +85,14 @@
     <a href="index.html" class="flex items-center shrink-0" aria-label="LabAnalyt">
       <img src="../images/logo-en.png" alt="LabAnalyt" class="logo" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'text-xl font-extrabold',style:'color:var(--ink)',textContent:'LabAnalyt'}))">
     </a>
-    <nav class="hidden lg:flex items-center gap-6"><a href="index.html" class="nav-a whitespace-nowrap">Home</a><a href="products.html" class="nav-a whitespace-nowrap">Equipment</a><a href="spare-parts.html" class="nav-a whitespace-nowrap">Parts</a><a href="service.html" class="nav-a active whitespace-nowrap">Service</a><a href="about.html" class="nav-a whitespace-nowrap">About</a><a href="contacts.html" class="nav-a whitespace-nowrap">Contacts</a></nav>
+    <nav class="hidden lg:flex items-center gap-6"><a href="index.html" class="nav-a whitespace-nowrap">Home</a><a href="products.html" class="nav-a active whitespace-nowrap">Equipment</a><a href="spare-parts.html" class="nav-a whitespace-nowrap">Parts</a><a href="service.html" class="nav-a whitespace-nowrap">Service</a><a href="about.html" class="nav-a whitespace-nowrap">About</a><a href="contacts.html" class="nav-a whitespace-nowrap">Contacts</a></nav>
     <div class="hidden lg:flex items-center gap-4">
-      <span class="langsw flex items-center gap-1.5"><a href="../service.html" class="">RU</a><span class="text-slate-300">/</span><a href="service.html" class="on">EN</a></span>
+      <span class="langsw flex items-center gap-1.5"><a href="../miraspec.html" class="">RU</a><span class="text-slate-300">/</span><a href="miraspec.html" class="on">EN</a></span>
       <a href="tel:+77074626711" class="font-bold text-[14px] whitespace-nowrap" style="color:var(--ink)">+7 707 462 6711</a>
       <button onclick="openLead('')" class="btn">Request a quote</button>
     </div>
     <div class="lg:hidden flex items-center gap-3">
-      <span class="langsw flex items-center gap-1.5"><a href="../service.html" class="">RU</a><span class="text-slate-300">/</span><a href="service.html" class="on">EN</a></span>
+      <span class="langsw flex items-center gap-1.5"><a href="../miraspec.html" class="">RU</a><span class="text-slate-300">/</span><a href="miraspec.html" class="on">EN</a></span>
       <button id="burger" aria-label="Menu" class="p-1.5 -mr-1.5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#051045" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
   </div>
@@ -96,9 +109,35 @@
       <button onclick="openLead('')" class="btn w-full">Request a quote</button>
     </div>
   </nav>
-</aside><main class="flex-1 flex items-center"><div class="wrap w-full py-6 md:py-7"><div class="text-center max-w-2xl mx-auto mb-5">
-      <p class="t-eyebrow mb-2">Service</p>
-      <h2 class="t-h2">Full cycle: from supply to service</h2><p class="t-body mt-2 max-w-2xl mx-auto">Full cycle: from supply to maintenance.</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 md:gap-3"><div class="card p-4 md:p-5"><h3 class="t-h3 mb-1.5">Equipment & parts supply</h3><p class="t-sm">Direct supply of instruments, parts and consumables.</p></div><div class="card p-4 md:p-5"><h3 class="t-h3 mb-1.5">Installation & commissioning</h3><p class="t-sm">On-site installation and setup.</p></div><div class="card p-4 md:p-5"><h3 class="t-h3 mb-1.5">Staff training</h3><p class="t-sm">Training on instruments and methods.</p></div><div class="card p-4 md:p-5"><h3 class="t-h3 mb-1.5">Repair & diagnostics</h3><p class="t-sm">Diagnostics and repair of analytical equipment.</p></div><div class="card p-4 md:p-5"><h3 class="t-h3 mb-1.5">Warranty service</h3><p class="t-sm">Scheduled maintenance and support.</p></div><div class="card p-4 md:p-5"><h3 class="t-h3 mb-1.5">IQ/OQ/PQ qualification</h3><p class="t-sm">Documented qualification for GLP/GMP.</p></div></div><div class="text-center mt-6"><button onclick="openLead('Service / repair')" class="btn">Request service</button></div></div></main>
+</aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
+<a href="../products.html" class="backlink">← Equipment</a>
+<p class="t-eyebrow mt-s mb-2">Lightnovo · Software</p>
+<h1 class="t-h2">Miraspec Software</h1>
+<p class="t-body mt-3 max-w-3xl">Lightnovo native software: instrument control, acquisition, processing and analysis of spectra. Identification of unknown substances against in-house and commercial spectral libraries, with additional information such as CAS numbers where available. Microscope systems use the legacy version.</p>
+<div class="g-photo mt-l">
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspec-01.webp — product photo</span><img src="../images/miraspec-01.webp" alt="Miraspec Software" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspec-02.webp — product photo</span><img src="../images/miraspec-02.webp" alt="Miraspec Software" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspec-03.webp — product photo</span><img src="../images/miraspec-03.webp" alt="Miraspec Software" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<h2 class="h-sec mt-l mb-s">Models and configurations</h2>
+<div class="g-cards">
+<div class="card p-3.5"><h3 class="t-h3 mb-1">Miraspec for Windows</h3><p class="t-sm">Windows installer, administrator rights required for installation.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3 mb-1">Android application</h3><p class="t-sm">Control of miniRaman spectrometers from a phone or tablet, Android 5 and newer.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+<div class="card p-3.5"><h3 class="t-h3 mb-1">Legacy version (32 and 64 bit)</h3><p class="t-sm">For Windows 7, 8, 10, 11. Required for microscope systems.</p><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
+</div>
+<h2 class="h-sec mt-l mb-s">Specifications</h2>
+<div class="g-specs">
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Platforms</div><div class="t-h3 mt-1">Windows 7 / 8 / 10 / 11, Android 5+</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Identification</div><div class="t-h3 mt-1">In-house and commercial libraries, CAS output</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Acquisition</div><div class="t-h3 mt-1">Laser power, exposure and repetition settings</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Mapping</div><div class="t-h3 mt-1">Sample surface curvature compensation</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Processing</div><div class="t-h3 mt-1">Baseline correction and peak fitting</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Compatibility</div><div class="t-h3 mt-1">miniRaman, miniRaman Pro, RG, microscopes</div></div>
+</div>
+<h2 class="h-sec mt-l mb-s">Applications</h2>
+<div class="taglist"><span class="tag">Routine measurements</span><span class="tag">Educational labs</span><span class="tag">Material identification</span><span class="tag">Research</span></div>
+<div class="ctabox mt-l"><h2 class="h-sec">Need help choosing a configuration?</h2><p class="t-body mt-2 max-w-3xl">We will match the configuration to your samples and quote delivery to Astana and across Kazakhstan.</p><div class="ctarow"><button onclick="openLead('Equipment (instrument)')" class="btn">Request a quote</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Message on WhatsApp</a></div></div>
+</div></main>
 <footer class="mt-auto" style="background:var(--ink)">
   <div class="wrap py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-white/60 text-[13px]">
     <div class="flex items-center gap-3"><a href="index.html" aria-label="LabAnalyt" class="shrink-0"><img src="../images/logo-en.png" alt="LabAnalyt" class="logo-f" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'text-base font-extrabold text-white',textContent:'LabAnalyt'}))"></a><a href="tel:+77074626711" class="text-white font-bold">+7 707 462 6711</a></div>
