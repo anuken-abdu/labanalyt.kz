@@ -7,16 +7,16 @@
 ================================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OEM-решения — Lightnovo | LabAnalyt</title>
-<meta name="description" content="Рамановские модули для встраивания в ваши приборы. Поставка, установка и сервис в Астане и по Казахстану.">
+<title>OEM-решения Lightnovo — Lightnovo | LabAnalyt</title>
+<meta name="description" content="Модульные блоки Раман-спектроскопии для интеграции в ваше оборудование. Поставка, установка и сервис в Астане и по Казахстану.">
 <link rel="canonical" href="https://labanalyt.kz/oem.html">
 <link rel="alternate" hreflang="ru" href="https://labanalyt.kz/oem.html">
 <link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/oem.html">
 <link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/oem.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
-<meta property="og:title" content="OEM-решения — Lightnovo | LabAnalyt">
-<meta property="og:description" content="Рамановские модули для встраивания в ваши приборы. Поставка, установка и сервис в Астане и по Казахстану.">
+<meta property="og:title" content="OEM-решения Lightnovo — Lightnovo | LabAnalyt">
+<meta property="og:description" content="Модульные блоки Раман-спектроскопии для интеграции в ваше оборудование. Поставка, установка и сервис в Астане и по Казахстану.">
 <meta property="og:image" content="images/og-banner.jpg">
 <meta property="og:url" content="https://labanalyt.kz/oem.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -60,20 +60,28 @@
   /* логотипы */
   .logo{height:40px;width:auto;display:block;max-width:230px}
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
+  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
-  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
-  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
-  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
   .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
-  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  @media(min-width:1024px){.h-sec{font-size:25px}}
+  .mt-s{margin-top:14px}.mt-l{margin-top:28px}.mb-s{margin-bottom:12px}
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
-  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
+  @media(min-width:1024px){.tagline{font-size:18px}}
+  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
+  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
+  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
+  .acclist{list-style:none;padding:0;margin:0}
+  .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
+  .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
@@ -111,32 +119,29 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="products.html" class="backlink">← Оборудование</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · OEM-интеграция</p>
-<h1 class="t-h2">OEM-решения</h1>
-<p class="t-body mt-3 max-w-3xl">Встраивание рамановской спектроскопии и микроскопии Lightnovo в оборудование заказчика: компактные модули, готовые к интеграции в производственные линии, приборы контроля качества и специализированные системы. Оптика, лазеры и корпус адаптируются под задачу и габариты изделия.</p>
+<p class="t-eyebrow mt-s mb-2">Lightnovo · OEM и интеграция</p>
+<h1 class="t-h2">OEM-решения Lightnovo</h1>
+<p class="tagline">Модульные блоки Раман-спектроскопии для производителей и системных интеграторов</p>
+<p class="t-body mt-3 max-w-3xl">Масштабируемые OEM-компоненты и готовые оптические блоки для компаний, разрабатывающих собственное аналитическое оборудование, встраиваемые промышленные системы и исследовательские платформы. Портфолио охватывает все серии спектрометров — miniRaman, miniRaman Pro, RG и RG Pro — от базовых спектрографов до полнофункциональных оптических модулей с лазерами и микроскопией.</p>
 <div class="g-photo mt-l">
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-01.webp — фото прибора</span><img src="images/oem-01.webp" alt="OEM-решения" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-02.webp — фото прибора</span><img src="images/oem-02.webp" alt="OEM-решения" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-03.webp — фото прибора</span><img src="images/oem-03.webp" alt="OEM-решения" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-01.webp — фото прибора</span><img src="images/oem-01.webp" alt="OEM-решения Lightnovo" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-02.webp — фото прибора</span><img src="images/oem-02.webp" alt="OEM-решения Lightnovo" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-03.webp — фото прибора</span><img src="images/oem-03.webp" alt="OEM-решения Lightnovo" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Модели и конфигурации</h2>
+<h2 class="h-sec mt-l mb-s">Ключевые преимущества</h2>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Патентованная автокалибровка</h3><p class="t-sm">Встроенный референсный канал непрерывно компенсирует дрейф длины волны лазера — конечное устройство не требует регулярной ручной калибровки.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Ультракомпактные размеры</h3><p class="t-sm">Полноценный исследовательский Раман-спектрометр встраивается даже в портативные и малогабаритные приборы.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Гибкая аппаратная поддержка</h3><p class="t-sm">Опциональная универсальная плата управления Universal OEM Board с поддержкой SDK для быстрой разработки собственного ПО.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Высокая оптическая эффективность</h3><p class="t-sm">Передача сигнала до 85–89 % от образца к детектору благодаря пропускающим дифракционным решёткам.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Модификации и характеристики</h2>
 <div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3 mb-1">OEM-модуль на базе miniRaman</h3><p class="t-sm">Минимальные габариты и вес, питание от аккумулятора, USB-C или Bluetooth.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">OEM-модуль на базе RG</h3><p class="t-sm">Исследовательский класс: высокое разрешение и стабильная мощность лазера.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">OEM-модуль низкочастотный (RG Pro)</h3><p class="t-sm">Доступ к области от 25 см⁻¹ для контроля полиморфов и структуры.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Кастомная разработка</h3><p class="t-sm">Индивидуальная оптическая схема, корпус и протокол управления.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-</div>
-<h2 class="h-sec mt-l mb-s">Характеристики</h2>
-<div class="g-specs">
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Базовые платформы</div><div class="t-h3 mt-1">miniRaman, RG, RG Pro</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Интерфейсы</div><div class="t-h3 mt-1">USB-C, Bluetooth, программный API</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Лазеры</div><div class="t-h3 mt-1">405, 532, 633, 660, 785 нм — по задаче</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Калибровка</div><div class="t-h3 mt-1">Встроенный опорный канал, автокалибровка</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Адаптация</div><div class="t-h3 mt-1">Оптика, корпус, крепления под изделие заказчика</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Поддержка</div><div class="t-h3 mt-1">Сопровождение интеграции и обучение</div></div>
+<div class="card p-3.5"><h3 class="t-h3">1. Спектрограф (Spectrograph Module)</h3><div class="spectbl"><div class="specrow"><span class="speck">Назначение</span><span class="specv">Компактный оптический блок с детектором для интеграции в сторонние аналитические установки</span></div><div class="specrow"><span class="speck">Что входит</span><span class="specv">Высокоэффективный спектрограф, выбранная конфигурация детектора, заводская оптическая калибровка, техническая документация</span></div><div class="specrow"><span class="speck">Применение</span><span class="specv">OEM-приборы, встраиваемые спектральные системы, специализированные научные установки</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">2. Спектрограф + система доставки луча (LBDS)</h3><div class="spectbl"><div class="specrow"><span class="speck">Назначение</span><span class="specv">Полноценный Раман-модуль Raman Engine, готовый к встраиванию в промышленные и лабораторные приборы</span></div><div class="specrow"><span class="speck">Что входит</span><span class="specv">Спектрограф, лазерный блок LBDS, патентованная система непрерывной калибровки, полная заводская Рамановская калибровка</span></div><div class="specrow"><span class="speck">Применение</span><span class="specv">Поточные in-line и at-line промышленные анализаторы, кастомные аналитические платформы</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">3. Спектрограф + LBDS + микроскопная оптика</h3><div class="spectbl"><div class="specrow"><span class="speck">Назначение</span><span class="specv">Готовый оптико-механический блок для Раман-микроскопов и систем гиперспектрального картирования</span></div><div class="specrow"><span class="speck">Что входит</span><span class="specv">Спектрограф, лазерная система доставки, микроскопные адаптеры и фокусирующая оптика, юстировка и калибровка на заводе</span></div><div class="specrow"><span class="speck">Применение</span><span class="specv">Исследовательские Раман-микроскопы, биомедицинские сканеры, системы визуализации материалов</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Платформа miniRaman / MRs Pro</h3><div class="spectbl"><div class="specrow"><span class="speck">Особенности</span><span class="specv">Ультракомпактные OEM-модули на базе патентованной технологии постоянной калибровки</span></div><div class="specrow"><span class="speck">Длины волн</span><span class="specv">660 нм и 785 нм</span></div><div class="specrow"><span class="speck">Габариты и вес</span><span class="specv">от 50 × 20 × 12 мм, только спектрограф — около 30 г</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Платформа RG / RG Pro</h3><div class="spectbl"><div class="specrow"><span class="speck">Особенности</span><span class="specv">Исследовательские OEM-модули с высокой оптической светосилой, КПД до 85 %, и низкочастотным диапазоном</span></div><div class="specrow"><span class="speck">Детекторы и лазеры</span><span class="specv">Охлаждаемые детекторы; лазеры 405, 532, 638, 785, 830 нм</span></div><div class="specrow"><span class="speck">Результат</span><span class="specv">Высокая спектральная детализация и отношение сигнал/шум</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
 </div>
 <h2 class="h-sec mt-l mb-s">Области применения</h2>
-<div class="taglist"><span class="tag">Производственные линии</span><span class="tag">Контроль качества</span><span class="tag">Медицинские приборы</span><span class="tag">Системы безопасности</span><span class="tag">Научные установки</span></div>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Промышленный контроль процессов</h3><p class="t-sm">Непрерывный мониторинг химических реакций и качества в производственных линиях.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Медицинское и биодиагностическое оборудование</h3><p class="t-sm">Портативные сканеры тканей, анализаторы биожидкостей, экспресс-диагностика.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Портативные приборы безопасности</h3><p class="t-sm">Встраиваемые модули для обнаружения опасных, наркотических и взрывчатых веществ.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Лабораторная автоматизация</h3><p class="t-sm">Интеграция Раман-канала в дозирующие станции, микрофлюидные чипы и роботизированные платформы.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Аксессуары и опции</h2>
+<ul class="acclist"><li>Три стандартизированных уровня интеграции — от спектрографа до готового микроскопного блока</li><li>Универсальная плата управления Universal OEM Board с SDK</li><li>Заводская оптическая и Рамановская калибровка каждого модуля</li><li>Сопровождение интеграции и техническая документация</li></ul>
 <div class="ctabox mt-l"><h2 class="h-sec">Нужна консультация по подбору модели?</h2><p class="t-body mt-2 max-w-3xl">Подберём конфигурацию под ваши образцы и задачи, посчитаем поставку в Астану и по Казахстану.</p><div class="ctarow"><button onclick="openLead('Оборудование (прибор)')" class="btn">Оставить заявку</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Написать в WhatsApp</a></div></div>
 </div></main>
 <footer class="mt-auto" style="background:var(--ink)">

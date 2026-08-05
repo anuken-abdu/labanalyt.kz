@@ -7,16 +7,16 @@
 ================================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Микроскоп RG — Lightnovo | LabAnalyt</title>
-<meta name="description" content="Исследовательский конфокальный рамановский микроскоп. Поставка, установка и сервис в Астане и по Казахстану.">
+<title>Раман-микроскоп RG — Lightnovo | LabAnalyt</title>
+<meta name="description" content="Исследовательский конфокальный микроскоп с 2D/3D-картированием. Поставка, установка и сервис в Астане и по Казахстану.">
 <link rel="canonical" href="https://labanalyt.kz/rg-microscope.html">
 <link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-microscope.html">
 <link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-microscope.html">
 <link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-microscope.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
-<meta property="og:title" content="Микроскоп RG — Lightnovo | LabAnalyt">
-<meta property="og:description" content="Исследовательский конфокальный рамановский микроскоп. Поставка, установка и сервис в Астане и по Казахстану.">
+<meta property="og:title" content="Раман-микроскоп RG — Lightnovo | LabAnalyt">
+<meta property="og:description" content="Исследовательский конфокальный микроскоп с 2D/3D-картированием. Поставка, установка и сервис в Астане и по Казахстану.">
 <meta property="og:image" content="images/og-banner.jpg">
 <meta property="og:url" content="https://labanalyt.kz/rg-microscope.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -60,20 +60,28 @@
   /* логотипы */
   .logo{height:40px;width:auto;display:block;max-width:230px}
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
+  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
-  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
-  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
-  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
   .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
-  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  @media(min-width:1024px){.h-sec{font-size:25px}}
+  .mt-s{margin-top:14px}.mt-l{margin-top:28px}.mb-s{margin-bottom:12px}
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
-  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
+  @media(min-width:1024px){.tagline{font-size:18px}}
+  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
+  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
+  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
+  .acclist{list-style:none;padding:0;margin:0}
+  .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
+  .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
@@ -111,31 +119,28 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="products.html" class="backlink">← Оборудование</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · Рамановская микроскопия</p>
-<h1 class="t-h2">Микроскоп RG</h1>
-<p class="t-body mt-3 max-w-3xl">Конфокальный рамановский микроскоп исследовательского класса с модульной платформой: внутрь устанавливается либо спектрометр RG, либо miniRaman. Дифракционно-ограниченное пространственное разрешение, большой диапазон картирования и дополнительная микроскопия в проходящем видимом свете на отдельном сенсоре. Прямая и инвертированная конфигурации переключаются переворотом прибора.</p>
+<p class="t-eyebrow mt-s mb-2">Lightnovo · Раман-микроскопы</p>
+<h1 class="t-h2">Раман-микроскоп RG</h1>
+<p class="tagline">Исследовательский конфокальный Раман-микроскоп высокого разрешения</p>
+<p class="t-body mt-3 max-w-3xl">Конфокальная микроскопная платформа профессионального класса на базе высокоэффективных спектрометров серии RG. Система сочетает высочайшее спектральное разрешение, субмикронную пространственную точность и построение подробных 2D/3D химических карт. Патентованная встроенная калибровка гарантирует стабильность и воспроизводимость результатов в самых сложных задачах материаловедения и биологии.</p>
 <div class="g-photo mt-l">
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-microscope-01.webp — фото прибора</span><img src="images/rg-microscope-01.webp" alt="Микроскоп RG" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-microscope-02.webp — фото прибора</span><img src="images/rg-microscope-02.webp" alt="Микроскоп RG" loading="lazy" onerror="this.remove()"></div></div>
-<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-microscope-03.webp — фото прибора</span><img src="images/rg-microscope-03.webp" alt="Микроскоп RG" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-microscope-01.webp — фото прибора</span><img src="images/rg-microscope-01.webp" alt="Раман-микроскоп RG" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-microscope-02.webp — фото прибора</span><img src="images/rg-microscope-02.webp" alt="Раман-микроскоп RG" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-microscope-03.webp — фото прибора</span><img src="images/rg-microscope-03.webp" alt="Раман-микроскоп RG" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Модели и конфигурации</h2>
+<h2 class="h-sec mt-l mb-s">Ключевые преимущества</h2>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Максимальная оптическая светосила</h3><p class="t-sm">Пропускающая дифракционная оптика с эффективностью до 85 % фиксирует даже сверхслабые сигналы комбинационного рассеяния.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Патентованная калибровка</h3><p class="t-sm">Автоматическая компенсация дрейфа лазера в реальном времени — абсолютная воспроизводимость волновых чисел.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Высокое конфокальное разрешение</h3><p class="t-sm">Латеральное разрешение до 800–900 нм и аксиальное до 2,5–3 мкм: субмикронные объекты и глубоко залегающие слои.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Модульная конструкция</h3><p class="t-sm">Трансформация из прямого (up-right) в инвертированный (inverted) микроскоп для разных типов образцов и клеточных культур.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Полный спектральный охват</h3><p class="t-sm">Интеграция лазеров от УФ 405 нм до ближнего ИК 830 нм.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Модификации и характеристики</h2>
 <div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Платформа RG (без спектрометра)</h3><p class="t-sm">Для тех, у кого уже есть RG или miniRaman. Артикул 5001-5002.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG микроскоп со спектрометром RG</h3><p class="t-sm">Максимальное спектральное разрешение и широкий диапазон.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">RG микроскоп со спектрометром miniRaman</h3><p class="t-sm">Экономичная конфигурация на базе портативного спектрометра.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Моторизованная платформа</h3><div class="spectbl"><div class="specrow"><span class="speck">Совместимые спектрометры</span><span class="specv">RG Spectrometer / RG Pro</span></div><div class="specrow"><span class="speck">Латеральное разрешение (XY)</span><span class="specv">800–900 нм</span></div><div class="specrow"><span class="speck">Аксиальное разрешение (Z)</span><span class="specv">2,5–3 мкм</span></div><div class="specrow"><span class="speck">Спектральное разрешение</span><span class="specv">от 1,8 см⁻¹ в зависимости от модели RG Pro</span></div><div class="specrow"><span class="speck">Микроскопия белого света</span><span class="specv">Отражённый свет с визуализацией пятна лазера</span></div><div class="specrow"><span class="speck">Перемещение XYZ</span><span class="specv">30 × 30 × 30 мм</span></div><div class="specrow"><span class="speck">Минимальный шаг</span><span class="specv">500 нм, автоматический</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Ручная платформа</h3><div class="spectbl"><div class="specrow"><span class="speck">Совместимые спектрометры</span><span class="specv">RG Spectrometer / RG Pro</span></div><div class="specrow"><span class="speck">Латеральное разрешение (XY)</span><span class="specv">800–900 нм</span></div><div class="specrow"><span class="speck">Аксиальное разрешение (Z)</span><span class="specv">2,5–3 мкм</span></div><div class="specrow"><span class="speck">Спектральное разрешение</span><span class="specv">от 1,8 см⁻¹ в зависимости от модели RG Pro</span></div><div class="specrow"><span class="speck">Микроскопия белого света</span><span class="specv">Отражённый свет с визуализацией пятна лазера</span></div><div class="specrow"><span class="speck">Перемещение XYZ</span><span class="specv">30 × 30 × 30 мм</span></div><div class="specrow"><span class="speck">Минимальный шаг</span><span class="specv">5 мкм, ручной</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">С фокусирующим столиком</h3><div class="spectbl"><div class="specrow"><span class="speck">Совместимые спектрометры</span><span class="specv">RG Spectrometer / RG Pro</span></div><div class="specrow"><span class="speck">Латеральное разрешение (XY)</span><span class="specv">800–900 нм</span></div><div class="specrow"><span class="speck">Аксиальное разрешение (Z)</span><span class="specv">2,5–3 мкм</span></div><div class="specrow"><span class="speck">Спектральное разрешение</span><span class="specv">от 1,8 см⁻¹ в зависимости от модели RG Pro</span></div><div class="specrow"><span class="speck">Микроскопия белого света</span><span class="specv">Дополнительная опция</span></div><div class="specrow"><span class="speck">Перемещение XYZ</span><span class="specv">10 × 10 × 13 мм</span></div><div class="specrow"><span class="speck">Минимальный шаг</span><span class="specv">5 мкм, ручной</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Характеристики</h2>
-<div class="g-specs">
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Совместимые спектрометры</div><div class="t-h3 mt-1">RG, RG Pro, miniRaman</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Пространственное разрешение</div><div class="t-h3 mt-1">Дифракционно-ограниченное</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Оптическая микроскопия</div><div class="t-h3 mt-1">Проходящий видимый свет, отдельный сенсор</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Конфигурации</div><div class="t-h3 mt-1">Прямая и инвертированная</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Картирование</div><div class="t-h3 mt-1">Большой диапазон перемещения по трём осям</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Срок поставки</div><div class="t-h3 mt-1">Уточняется при заказе</div></div>
-</div>
+<div class="notebox mt-s">Разрешение измерено при использовании объектива 100× с числовой апертурой NA = 0,95. Управление и обработка данных — в ПО Miraspec: 2D/3D картирование по XYZ и кинетический анализ во времени, деконволюция спектров (PCR, SIMPLISMA-NNLS, MCR-ALS), удаление космических лучей, коррекция базовой линии и нормализация, контроль мощности лазера, времени накопления и шага сканирования.</div>
 <h2 class="h-sec mt-l mb-s">Области применения</h2>
-<div class="taglist"><span class="tag">Материаловедение</span><span class="tag">Полупроводники</span><span class="tag">Картирование ориентации кристаллов</span><span class="tag">Фармацевтика</span><span class="tag">Науки о жизни</span><span class="tag">Полимеры</span></div>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Материаловедение и нанотехнологии</h3><p class="t-sm">Анализ графена, углеродных нанотрубок, 2D-материалов, полупроводниковых гетероструктур и дефектов кристаллической решётки.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Биология, медицина и фармацевтика</h3><p class="t-sm">Распределение действующего вещества в таблетках, исследование отдельных клеток, анализ полиморфизма ЛС, тканевая диагностика.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Полимерная химия</h3><p class="t-sm">Микроскопический анализ фазового разделения, сополимеров, включений и дефектов.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Геология и минералогия</h3><p class="t-sm">Идентификация микроминералов, флюидных и твёрдых включений в породах.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Криминалистика и искусствоведение</h3><p class="t-sm">Микроанализ слоистых красок, пигментов, чернил, следов опасных и токсичных веществ.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Аксессуары и опции</h2>
+<ul class="acclist"><li>Объективы 10×, 20×, 50× и 100× с адаптацией для Раман-спектроскопии</li><li>Адаптеры для предметных стёкол, 96-луночных планшетов, чашек Петри и виал</li><li>Адаптеры резьбы RMS, M25×0,75, магнитные системы быстрой смены объективов M27×0,75</li><li>Защитные экраны для защиты оператора от лазерного излучения</li></ul>
 <div class="ctabox mt-l"><h2 class="h-sec">Нужна консультация по подбору модели?</h2><p class="t-body mt-2 max-w-3xl">Подберём конфигурацию под ваши образцы и задачи, посчитаем поставку в Астану и по Казахстану.</p><div class="ctarow"><button onclick="openLead('Оборудование (прибор)')" class="btn">Оставить заявку</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Написать в WhatsApp</a></div></div>
 </div></main>
 <footer class="mt-auto" style="background:var(--ink)">

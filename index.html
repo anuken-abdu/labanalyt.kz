@@ -60,10 +60,23 @@
   /* логотипы */
   .logo{height:40px;width:auto;display:block;max-width:230px}
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
+  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
   .hero{min-height:calc(100dvh - 210px)} @media(min-width:768px){.hero{min-height:calc(100dvh - 164px)}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
+  /* герой: читаемость поверх фотографии и крупный текст на десктопе */
+  .hero .t-h1{font-size:clamp(32px,5.2vw,62px)}
+  .hero .t-eyebrow{font-size:13px}
+  .hero-sub{font-size:17px;line-height:1.55;color:var(--ink);font-weight:500}
+  .hero-scrim{position:absolute;inset:0;background:
+    radial-gradient(ellipse 76% 56% at 50% 52%,rgba(255,255,255,.88) 0%,rgba(255,255,255,.38) 60%,rgba(255,255,255,0) 100%),
+    linear-gradient(180deg,rgba(255,255,255,.90) 0%,rgba(255,255,255,.55) 45%,rgba(241,246,250,.92) 100%)}
+  @media(min-width:1024px){
+    .hero .t-eyebrow{font-size:14px;letter-spacing:.1em}
+    .hero-sub{font-size:21px}
+    .hero .btn,.hero .btn-d{font-size:15.5px;padding:16px 30px;border-radius:11px}
+    .hero .btn-o{font-size:15.5px;padding:15px 29px;border-radius:11px}
+  }
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -101,14 +114,14 @@
 <section class="hero relative flex flex-col">
   <div class="absolute inset-0 z-0">
     <div class="ph w-full h-full"><span class="lbl">hero-bg.webp — фото лаборатории</span><img src="images/hero-bg.webp" alt="Лаборатория" onerror="this.remove()"></div>
-    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(255,255,255,.92) 0%,rgba(255,255,255,.78) 45%,rgba(236,245,247,.92) 100%)"></div>
+    <div class="hero-scrim"></div>
   </div>
   <div class="relative z-10 wrap flex-1 flex flex-col">
     <div class="pt-5 grid grid-cols-3 sm:grid-cols-6 gap-x-6 gap-y-4 items-center max-w-4xl mx-auto w-full"><div class="flex items-center justify-center h-8"><img src="images/brand-agilent.svg" alt="Agilent" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'Agilent'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-metrohm.svg" alt="Metrohm" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'Metrohm'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-malvern.svg" alt="Malvern Panalytical" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'Malvern Panalytical'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-struers.svg" alt="Struers" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'Struers'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-elga.svg" alt="ELGA" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'ELGA'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-lni.svg" alt="LNI Swissgas" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'LNI Swissgas'}))"></div></div>
     <div class="flex-1 flex flex-col items-center justify-center text-center py-5">
       <p class="t-eyebrow mb-4">Оснащение лабораторий под ключ · Астана</p>
       <h1 class="t-h1 max-w-3xl">Лабораторное оборудование, запчасти и расходники</h1>
-      <p class="t-body max-w-2xl mt-3 mb-6" style="font-size:16px">Поставка лабораторного и аналитического оборудования, запчастей и расходных материалов в Астане и по всему Казахстану.</p>
+      <p class="hero-sub max-w-2xl mt-3 mb-6">Поставка лабораторного и аналитического оборудования, запчастей и расходных материалов в Астане и по всему Казахстану.</p>
       <div class="flex flex-col sm:flex-row gap-3">
         <button onclick="openLead('Оборудование (прибор)')" class="btn">Заявка на прибор</button>
         <button onclick="openLead('Запчасти')" class="btn-d">Заявка на запчасти</button>

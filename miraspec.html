@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ПО Miraspec — Lightnovo | LabAnalyt</title>
-<meta name="description" content="Штатное ПО для управления приборами и обработки спектров. Поставка, установка и сервис в Астане и по Казахстану.">
+<meta name="description" content="ПО для управления приборами и анализа спектральных данных. Поставка, установка и сервис в Астане и по Казахстану.">
 <link rel="canonical" href="https://labanalyt.kz/miraspec.html">
 <link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspec.html">
 <link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspec.html">
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
 <meta property="og:title" content="ПО Miraspec — Lightnovo | LabAnalyt">
-<meta property="og:description" content="Штатное ПО для управления приборами и обработки спектров. Поставка, установка и сервис в Астане и по Казахстану.">
+<meta property="og:description" content="ПО для управления приборами и анализа спектральных данных. Поставка, установка и сервис в Астане и по Казахстану.">
 <meta property="og:image" content="images/og-banner.jpg">
 <meta property="og:url" content="https://labanalyt.kz/miraspec.html">
 <meta name="twitter:card" content="summary_large_image">
@@ -60,20 +60,28 @@
   /* логотипы */
   .logo{height:40px;width:auto;display:block;max-width:230px}
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
+  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
-  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
-  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
-  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
   .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
-  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  @media(min-width:1024px){.h-sec{font-size:25px}}
+  .mt-s{margin-top:14px}.mt-l{margin-top:28px}.mb-s{margin-bottom:12px}
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
-  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
+  @media(min-width:1024px){.tagline{font-size:18px}}
+  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
+  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
+  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
+  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
+  .acclist{list-style:none;padding:0;margin:0}
+  .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
+  .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
@@ -113,29 +121,26 @@
 <a href="products.html" class="backlink">← Оборудование</a>
 <p class="t-eyebrow mt-s mb-2">Lightnovo · Программное обеспечение</p>
 <h1 class="t-h2">ПО Miraspec</h1>
-<p class="t-body mt-3 max-w-3xl">Штатное программное обеспечение Lightnovo: управление прибором, сбор, обработка и анализ спектров. Идентификация неизвестных веществ по собственным и коммерческим спектральным библиотекам с выводом дополнительной информации, включая CAS-номера. Для микроскопных систем используется legacy-версия.</p>
+<p class="tagline">Интеллектуальное программное обеспечение для Раман-спектроскопии</p>
+<p class="t-body mt-3 max-w-3xl">Программное обеспечение Lightnovo для полного управления Раман-спектрометрами, микроскопами и OEM-системами, а также для высокоточной обработки и анализа спектральных данных. Интуитивный интерфейс сочетается с мощными математическими алгоритмами: одинаково эффективно выполняются и быстрые рутинные измерения, и сложный научный анализ.</p>
 <div class="g-photo mt-l">
 <div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspec-01.webp — фото прибора</span><img src="images/miraspec-01.webp" alt="ПО Miraspec" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspec-02.webp — фото прибора</span><img src="images/miraspec-02.webp" alt="ПО Miraspec" loading="lazy" onerror="this.remove()"></div></div>
 <div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspec-03.webp — фото прибора</span><img src="images/miraspec-03.webp" alt="ПО Miraspec" loading="lazy" onerror="this.remove()"></div></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Модели и конфигурации</h2>
+<h2 class="h-sec mt-l mb-s">Ключевые преимущества</h2>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Управление приборами в реальном времени</h3><p class="t-sm">Гибкая настройка мощности лазера, времени экспозиции, числа повторений, усиления сенсора и температурного режима детектора.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Автоматическая калибровка</h3><p class="t-sm">Поддержка постоянной автокалибровки волновых чисел и интенсивности без внешних стандартов.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Мобильность подключения</h3><p class="t-sm">Беспроводное управление по Bluetooth или проводное через USB и USB-C.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Продвинутая обработка спектров</h3><p class="t-sm">Удаление космических лучей, сглаживание по Савицкому-Голею, вычитание флуоресценции и коррекция базовой линии.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Деконволюция и анализ пиков</h3><p class="t-sm">Автоматический поиск пиков, расчёт площади, полуширины (FWHM), высоты и центральных частот.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Картирование и хемометрика</h3><p class="t-sm">2D/3D картирование по XYZ в реальном времени, кинетический анализ во времени, алгоритмы PCA, PCR, SIMPLISMA-NNLS, MCR-ALS.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Работа с библиотеками спектров</h3><p class="t-sm">Идентификация в один клик по базам наркотиков, прекурсоров, взрывчатых веществ, фармацевтики, полимеров и минералов; создание собственных библиотек.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Модификации и характеристики</h2>
 <div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Miraspec для Windows</h3><p class="t-sm">Установщик для Windows, требует прав администратора при установке.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Приложение для Android</h3><p class="t-sm">Управление спектрометрами miniRaman со смартфона или планшета, Android 5 и новее.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3 mb-1">Legacy-версия (32 и 64 бита)</h3><p class="t-sm">Для Windows 7, 8, 10, 11. Требуется для микроскопных систем.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Miraspec для ПК</h3><div class="spectbl"><div class="specrow"><span class="speck">Платформы</span><span class="specv">Windows, Linux, macOS</span></div><div class="specrow"><span class="speck">Назначение</span><span class="specv">Полнофункциональный программный комплекс</span></div><div class="specrow"><span class="speck">Возможности</span><span class="specv">Управление приборами, обработка спектров, картирование, хемометрика, работа с библиотеками</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Miraspec Mobile</h3><div class="spectbl"><div class="specrow"><span class="speck">Платформы</span><span class="specv">Смартфоны и планшеты</span></div><div class="specrow"><span class="speck">Назначение</span><span class="specv">Экспресс-идентификация и управление спектрометрами в поле</span></div><div class="specrow"><span class="speck">Возможности</span><span class="specv">Подключение по Bluetooth и USB-C, идентификация по библиотекам</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3">Miraspec Flow</h3><div class="spectbl"><div class="specrow"><span class="speck">Платформы</span><span class="specv">Кроссплатформенное решение</span></div><div class="specrow"><span class="speck">Назначение</span><span class="specv">Стандартизированные рабочие процессы и управление парком приборов</span></div><div class="specrow"><span class="speck">Возможности</span><span class="specv">Подробнее — на странице ПО MiraspecFlow</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
 </div>
-<h2 class="h-sec mt-l mb-s">Характеристики</h2>
-<div class="g-specs">
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Платформы</div><div class="t-h3 mt-1">Windows 7 / 8 / 10 / 11, Android 5+</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Идентификация</div><div class="t-h3 mt-1">По собственным и коммерческим библиотекам, вывод CAS</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Съёмка</div><div class="t-h3 mt-1">Настройка мощности, экспозиции, числа повторов</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Картирование</div><div class="t-h3 mt-1">Компенсация кривизны поверхности образца</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Обработка</div><div class="t-h3 mt-1">Базовая коррекция фона и разложение пиков</div></div>
-<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Совместимость</div><div class="t-h3 mt-1">miniRaman, miniRaman Pro, RG, микроскопы</div></div>
-</div>
+<div class="notebox mt-s">Форматы экспорта: текстовые .txt, .csv, .tsv, спектральный .jdx (JCAMP-DX), а также графические экспорты спектров и тепловых карт высокого разрешения. Данные готовы к дальнейшей обработке в Origin, MATLAB и Python.</div>
 <h2 class="h-sec mt-l mb-s">Области применения</h2>
-<div class="taglist"><span class="tag">Рутинные измерения</span><span class="tag">Учебные лаборатории</span><span class="tag">Идентификация материалов</span><span class="tag">Научные задачи</span></div>
+<div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Научно-исследовательские лаборатории</h3><p class="t-sm">Обработка данных фундаментальных и прикладных исследований.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Промышленный контроль качества</h3><p class="t-sm">Входной контроль сырья, проверка чистоты готовой продукции.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Криминалистика и службы безопасности</h3><p class="t-sm">Мгновенная идентификация неизвестных веществ, наркотических средств и взрывчатки в полевых условиях.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Фармацевтика и биомедицина</h3><p class="t-sm">Анализ распределения активных фармацевтических ингредиентов и обработка биомедицинских карт тканей.</p></div></div>
+<h2 class="h-sec mt-l mb-s">Аксессуары и опции</h2>
+<ul class="acclist"><li>Совместимо со спектрометрами miniRaman, miniRaman Pro, RG и RG Pro</li><li>Совместимо с Раман-микроскопами miniRaman и RG</li><li>Совместимо с OEM-системами Lightnovo</li><li>Экспорт в Origin, MATLAB, Python</li></ul>
 <div class="ctabox mt-l"><h2 class="h-sec">Нужна консультация по подбору модели?</h2><p class="t-body mt-2 max-w-3xl">Подберём конфигурацию под ваши образцы и задачи, посчитаем поставку в Астану и по Казахстану.</p><div class="ctarow"><button onclick="openLead('Оборудование (прибор)')" class="btn">Оставить заявку</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Написать в WhatsApp</a></div></div>
 </div></main>
 <footer class="mt-auto" style="background:var(--ink)">
