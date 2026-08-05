@@ -7,18 +7,18 @@
 ================================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LabAnalyt — лабораторное оборудование и запчасти в Астане</title>
-<meta name="description" content="Поставка лабораторного и аналитического оборудования, запчастей и расходных материалов в Астане и по Казахстану. Сервис, установка, IQ/OQ.">
-<link rel="canonical" href="https://labanalyt.kz/">
-<link rel="alternate" hreflang="ru" href="https://labanalyt.kz/">
-<link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/">
-<link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/">
+<title>Спектрометр RG Pro — Lightnovo | LabAnalyt</title>
+<meta name="description" content="Низкочастотный спектрометр: 25–4000 см⁻¹ в одном приборе. Поставка, установка и сервис в Астане и по Казахстану.">
+<link rel="canonical" href="https://labanalyt.kz/rg-pro.html">
+<link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-pro.html">
+<link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-pro.html">
+<link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-pro.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabAnalyt">
-<meta property="og:title" content="LabAnalyt — лабораторное оборудование и запчасти в Астане">
-<meta property="og:description" content="Поставка лабораторного и аналитического оборудования, запчастей и расходных материалов в Астане и по Казахстану. Сервис, установка, IQ/OQ.">
+<meta property="og:title" content="Спектрометр RG Pro — Lightnovo | LabAnalyt">
+<meta property="og:description" content="Низкочастотный спектрометр: 25–4000 см⁻¹ в одном приборе. Поставка, установка и сервис в Астане и по Казахстану.">
 <meta property="og:image" content="images/og-banner.jpg">
-<meta property="og:url" content="https://labanalyt.kz/">
+<meta property="og:url" content="https://labanalyt.kz/rg-pro.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/favicon.png">
@@ -62,8 +62,20 @@
   .logo-m{height:36px;width:auto;display:block;max-width:200px}
   .logo-f{height:38px;width:auto;display:block;max-width:210px;filter:brightness(0) invert(1)}
   @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:42px}}
-  .hero{min-height:calc(100dvh - 210px)} @media(min-width:768px){.hero{min-height:calc(100dvh - 164px)}}
   .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
+  /* сетки продуктовых страниц (без зависимости от purge-сборки Tailwind) */
+  .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
+  .g-specs{display:grid;grid-template-columns:1fr;gap:10px}
+  @media(min-width:640px){.g-cards{grid-template-columns:repeat(2,1fr)}.g-specs{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1024px){.g-photo{grid-template-columns:repeat(3,1fr);gap:12px}.g-cards{grid-template-columns:repeat(3,1fr);gap:12px}.g-specs{grid-template-columns:repeat(3,1fr);gap:12px}}
+  .h-sec{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
+  .mt-s{margin-top:14px}.mt-l{margin-top:26px}.mb-s{margin-bottom:12px}
+  .backlink{font-size:13px;font-weight:700;color:var(--accent)}
+  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12.5px;color:var(--body);background:#fff}
+  .taglist{display:flex;flex-wrap:wrap;gap:7px}
+  .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
+  .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -73,14 +85,14 @@
     <a href="index.html" class="flex items-center shrink-0" aria-label="LabAnalyt">
       <img src="images/logo-ru.png" alt="LabAnalyt" class="logo" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'text-xl font-extrabold',style:'color:var(--ink)',textContent:'LabAnalyt'}))">
     </a>
-    <nav class="hidden lg:flex items-center gap-6"><a href="index.html" class="nav-a active whitespace-nowrap">Главная</a><a href="products.html" class="nav-a whitespace-nowrap">Оборудование</a><a href="spare-parts.html" class="nav-a whitespace-nowrap">Запчасти</a><a href="service.html" class="nav-a whitespace-nowrap">Сервис</a><a href="about.html" class="nav-a whitespace-nowrap">О нас</a><a href="contacts.html" class="nav-a whitespace-nowrap">Контакты</a></nav>
+    <nav class="hidden lg:flex items-center gap-6"><a href="index.html" class="nav-a whitespace-nowrap">Главная</a><a href="products.html" class="nav-a active whitespace-nowrap">Оборудование</a><a href="spare-parts.html" class="nav-a whitespace-nowrap">Запчасти</a><a href="service.html" class="nav-a whitespace-nowrap">Сервис</a><a href="about.html" class="nav-a whitespace-nowrap">О нас</a><a href="contacts.html" class="nav-a whitespace-nowrap">Контакты</a></nav>
     <div class="hidden lg:flex items-center gap-4">
-      <span class="langsw flex items-center gap-1.5"><a href="index.html" class="on">RU</a><span class="text-slate-300">/</span><a href="en/index.html" class="">EN</a></span>
+      <span class="langsw flex items-center gap-1.5"><a href="rg-pro.html" class="on">RU</a><span class="text-slate-300">/</span><a href="en/rg-pro.html" class="">EN</a></span>
       <a href="tel:+77074626711" class="font-bold text-[14px] whitespace-nowrap" style="color:var(--ink)">+7 707 462 6711</a>
       <button onclick="openLead('')" class="btn">Оставить заявку</button>
     </div>
     <div class="lg:hidden flex items-center gap-3">
-      <span class="langsw flex items-center gap-1.5"><a href="index.html" class="on">RU</a><span class="text-slate-300">/</span><a href="en/index.html" class="">EN</a></span>
+      <span class="langsw flex items-center gap-1.5"><a href="rg-pro.html" class="on">RU</a><span class="text-slate-300">/</span><a href="en/rg-pro.html" class="">EN</a></span>
       <button id="burger" aria-label="Menu" class="p-1.5 -mr-1.5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#051045" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
   </div>
@@ -97,26 +109,35 @@
       <button onclick="openLead('')" class="btn w-full">Оставить заявку</button>
     </div>
   </nav>
-</aside>
-<section class="hero relative flex flex-col">
-  <div class="absolute inset-0 z-0">
-    <div class="ph w-full h-full"><span class="lbl">hero-bg.webp — фото лаборатории</span><img src="images/hero-bg.webp" alt="Лаборатория" onerror="this.remove()"></div>
-    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(255,255,255,.92) 0%,rgba(255,255,255,.78) 45%,rgba(236,245,247,.92) 100%)"></div>
-  </div>
-  <div class="relative z-10 wrap flex-1 flex flex-col">
-    <div class="pt-5 grid grid-cols-3 sm:grid-cols-6 gap-x-6 gap-y-4 items-center max-w-4xl mx-auto w-full"><div class="flex items-center justify-center h-8"><img src="images/brand-agilent.svg" alt="Agilent" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'Agilent'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-metrohm.svg" alt="Metrohm" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'Metrohm'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-malvern.svg" alt="Malvern Panalytical" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'Malvern Panalytical'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-struers.svg" alt="Struers" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'Struers'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-elga.svg" alt="ELGA" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'ELGA'}))"></div><div class="flex items-center justify-center h-8"><img src="images/brand-lni.svg" alt="LNI Swissgas" class="max-h-7 w-auto opacity-70" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-sm',style:'color:#7C93A6',textContent:'LNI Swissgas'}))"></div></div>
-    <div class="flex-1 flex flex-col items-center justify-center text-center py-5">
-      <p class="t-eyebrow mb-4">Оснащение лабораторий под ключ · Астана</p>
-      <h1 class="t-h1 max-w-3xl">Лабораторное оборудование, запчасти и расходники</h1>
-      <p class="t-body max-w-2xl mt-3 mb-6" style="font-size:16px">Поставка лабораторного и аналитического оборудования, запчастей и расходных материалов в Астане и по всему Казахстану.</p>
-      <div class="flex flex-col sm:flex-row gap-3">
-        <button onclick="openLead('Оборудование (прибор)')" class="btn">Заявка на прибор</button>
-        <button onclick="openLead('Запчасти')" class="btn-d">Заявка на запчасти</button>
-        <button onclick="openLead('Сервис / ремонт')" class="btn-o">Заявка на сервис</button>
-      </div>
-    </div>
-  </div>
-</section>
+</aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
+<a href="products.html" class="backlink">← Оборудование</a>
+<p class="t-eyebrow mt-s mb-2">Lightnovo · Низкочастотная рамановская спектроскопия</p>
+<h1 class="t-h2">Спектрометр RG Pro</h1>
+<p class="t-body mt-3 max-w-3xl">Самый продвинутый спектрометр линейки RG. Нижняя граница 25 см⁻¹ открывает доступ к низкочастотным модам, недоступным обычным системам: терагерцовая и «отпечатковая» области снимаются одновременно, 25–4000 см⁻¹. Модульный корпус готов к работе на столе, на микроскопной платформе и в OEM-интеграции.</p>
+<div class="g-photo mt-l">
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-01.webp — фото прибора</span><img src="images/rg-pro-01.webp" alt="Спектрометр RG Pro" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-02.webp — фото прибора</span><img src="images/rg-pro-02.webp" alt="Спектрометр RG Pro" loading="lazy" onerror="this.remove()"></div></div>
+<div class="card overflow-hidden"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-03.webp — фото прибора</span><img src="images/rg-pro-03.webp" alt="Спектрометр RG Pro" loading="lazy" onerror="this.remove()"></div></div>
+</div>
+<h2 class="h-sec mt-l mb-s">Модели и конфигурации</h2>
+<div class="g-cards">
+<div class="card p-3.5"><h3 class="t-h3 mb-1">RG Pro 785 нм</h3><p class="t-sm">Основная низкочастотная конфигурация, минимум флуоресценции.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3 mb-1">RG Pro 532 нм</h3><p class="t-sm">Для 2D-материалов и полупроводников, повышенный сигнал.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+<div class="card p-3.5"><h3 class="t-h3 mb-1">RG Pro 633 нм</h3><p class="t-sm">Промежуточная конфигурация для сложных матриц.</p><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
+</div>
+<h2 class="h-sec mt-l mb-s">Характеристики</h2>
+<div class="g-specs">
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Нижняя граница</div><div class="t-h3 mt-1">25 см⁻¹</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Спектральный диапазон</div><div class="t-h3 mt-1">25–4000 см⁻¹</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Стандарты</div><div class="t-h3 mt-1">ASTM E1840 и ASTM E2529</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Исполнение</div><div class="t-h3 mt-1">Настольное, на микроскопе, OEM-модуль</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">Совместимость</div><div class="t-h3 mt-1">Микроскопная платформа RG</div></div>
+<div class="card p-3.5"><div class="t-sm" style="font-size:12px">ПО</div><div class="t-h3 mt-1">Miraspec и MiraspecFlow</div></div>
+</div>
+<h2 class="h-sec mt-l mb-s">Области применения</h2>
+<div class="taglist"><span class="tag">2D-материалы (графен, MoS₂)</span><span class="tag">Полиморфы в фармацевтике</span><span class="tag">Полупроводники</span><span class="tag">Полимеры</span><span class="tag">Аккумуляторные материалы</span><span class="tag">Минералогия</span></div>
+<div class="ctabox mt-l"><h2 class="h-sec">Нужна консультация по подбору модели?</h2><p class="t-body mt-2 max-w-3xl">Подберём конфигурацию под ваши образцы и задачи, посчитаем поставку в Астану и по Казахстану.</p><div class="ctarow"><button onclick="openLead('Оборудование (прибор)')" class="btn">Оставить заявку</button><a href="https://wa.me/77074626711" target="_blank" rel="noopener" class="btn-o">Написать в WhatsApp</a></div></div>
+</div></main>
 <footer class="mt-auto" style="background:var(--ink)">
   <div class="wrap py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-white/60 text-[13px]">
     <div class="flex items-center gap-3"><a href="index.html" aria-label="LabAnalyt" class="shrink-0"><img src="images/logo-ru.png" alt="LabAnalyt" class="logo-f" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'text-base font-extrabold text-white',textContent:'LabAnalyt'}))"></a><a href="tel:+77074626711" class="text-white font-bold">+7 707 462 6711</a></div>
