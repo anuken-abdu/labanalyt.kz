@@ -58,11 +58,11 @@
   .langsw a{font-size:13px;font-weight:700;color:#8DA2B3} .langsw a.on{color:var(--ink)}
   #menu{transition:transform .25s ease}
   /* логотипы */
-  .logo{height:40px;width:auto;display:block;max-width:230px}
-  .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
-  .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
+  .logo{height:52px;width:auto;display:block;max-width:300px}
+  .logo-m{height:44px;width:auto;display:block;max-width:250px}
+  .logo-f{height:42px;width:auto;display:block;max-width:250px;background:#fff;padding:6px 11px;border-radius:10px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:66px;max-width:360px}.logo-m{height:48px}.logo-f{height:50px}}
+  .hdr{height:86px} @media(min-width:768px){.hdr{height:104px}}
   /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
@@ -74,16 +74,24 @@
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
   .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
   @media(min-width:1024px){.tagline{font-size:18px}}
-  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
-  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
-  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
-  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
   .acclist{list-style:none;padding:0;margin:0}
   .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
   .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
   .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  /* таблицы характеристик */
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:#fff}
+  .spectable{width:100%;border-collapse:collapse;min-width:720px}
+  .spectable th,.spectable td{padding:11px 14px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:left;vertical-align:top;font-size:13px;line-height:1.45;color:var(--body)}
+  .spectable th{background:var(--soft);color:var(--ink);font-weight:700;font-size:12.5px}
+  .spectable tbody tr:last-child td{border-bottom:none}
+  .spectable th:last-child,.spectable td:last-child{border-right:none}
+  .spectable td:first-child{font-weight:700;color:var(--ink)}
+  .tblhint{font-size:12px;color:var(--body);margin-top:8px}
+  @media(min-width:1024px){.tblhint{display:none}.spectable th,.spectable td{font-size:13.5px;padding:12px 16px}}
+  .ln-mark{height:14px;width:auto;display:inline-block;vertical-align:-2px}
+  @media(min-width:1024px){.ln-mark{height:16px}}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -119,7 +127,7 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="../products.html" class="backlink">← Equipment</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · Raman microscopes</p>
+<p class="t-eyebrow mt-s mb-2"><img src="../images/lightnovo-wordmark.png" alt="Lightnovo" class="ln-mark" onerror="this.replaceWith(document.createTextNode('LIGHTNOVO'))"> · Raman microscopes</p>
 <h1 class="t-h2">RG Raman Microscope</h1>
 <p class="tagline">Research-grade high-resolution confocal Raman microscope</p>
 <p class="t-body mt-3 max-w-3xl">A professional-grade confocal microscope platform built on high-efficiency RG series spectrometers. The system combines the highest spectral resolution, sub-micron spatial precision and detailed 2D/3D chemical mapping. Patented built-in calibration guarantees stability and reproducibility in the most demanding materials science and biology tasks.</p>
@@ -131,11 +139,7 @@
 <h2 class="h-sec mt-l mb-s">Key advantages</h2>
 <div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Maximum optical throughput</h3><p class="t-sm">Transmission diffraction optics at up to 85% efficiency capture even extremely weak Raman signals.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Patented calibration</h3><p class="t-sm">Real-time automatic compensation of laser drift — absolute wavenumber reproducibility.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">High confocal resolution</h3><p class="t-sm">Lateral resolution down to 800–900 nm and axial down to 2.5–3 µm: sub-micron objects and deep-lying layers.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Modular design</h3><p class="t-sm">Converts from upright to inverted microscope for different sample types and cell cultures.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Full spectral coverage</h3><p class="t-sm">Integration of lasers from UV 405 nm to near-infrared 830 nm.</p></div></div>
 <h2 class="h-sec mt-l mb-s">Models and specifications</h2>
-<div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3">Motorized platform</h3><div class="spectbl"><div class="specrow"><span class="speck">Compatible spectrometers</span><span class="specv">RG Spectrometer / RG Pro</span></div><div class="specrow"><span class="speck">Lateral resolution (XY)</span><span class="specv">800–900 nm</span></div><div class="specrow"><span class="speck">Axial resolution (Z)</span><span class="specv">2.5–3 µm</span></div><div class="specrow"><span class="speck">Spectral resolution</span><span class="specv">from 1.8 cm⁻¹ depending on RG Pro model</span></div><div class="specrow"><span class="speck">White light microscopy</span><span class="specv">Reflected light with laser spot visualisation</span></div><div class="specrow"><span class="speck">XYZ travel range</span><span class="specv">30 × 30 × 30 mm</span></div><div class="specrow"><span class="speck">Minimum step</span><span class="specv">500 nm, automatic</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3">Manual platform</h3><div class="spectbl"><div class="specrow"><span class="speck">Compatible spectrometers</span><span class="specv">RG Spectrometer / RG Pro</span></div><div class="specrow"><span class="speck">Lateral resolution (XY)</span><span class="specv">800–900 nm</span></div><div class="specrow"><span class="speck">Axial resolution (Z)</span><span class="specv">2.5–3 µm</span></div><div class="specrow"><span class="speck">Spectral resolution</span><span class="specv">from 1.8 cm⁻¹ depending on RG Pro model</span></div><div class="specrow"><span class="speck">White light microscopy</span><span class="specv">Reflected light with laser spot visualisation</span></div><div class="specrow"><span class="speck">XYZ travel range</span><span class="specv">30 × 30 × 30 mm</span></div><div class="specrow"><span class="speck">Minimum step</span><span class="specv">5 µm, manual</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-<div class="card p-3.5"><h3 class="t-h3">With focusing stage</h3><div class="spectbl"><div class="specrow"><span class="speck">Compatible spectrometers</span><span class="specv">RG Spectrometer / RG Pro</span></div><div class="specrow"><span class="speck">Lateral resolution (XY)</span><span class="specv">800–900 nm</span></div><div class="specrow"><span class="speck">Axial resolution (Z)</span><span class="specv">2.5–3 µm</span></div><div class="specrow"><span class="speck">Spectral resolution</span><span class="specv">from 1.8 cm⁻¹ depending on RG Pro model</span></div><div class="specrow"><span class="speck">White light microscopy</span><span class="specv">Optional</span></div><div class="specrow"><span class="speck">XYZ travel range</span><span class="specv">10 × 10 × 13 mm</span></div><div class="specrow"><span class="speck">Minimum step</span><span class="specv">5 µm, manual</span></div></div><button onclick="openLead('Equipment (instrument)')" class="btn-o w-full mt-3">Request a quote</button></div>
-</div>
+<div class="tblwrap mt-s"><table class="spectable"><thead><tr><th>Model</th><th>Compatible spectrometers</th><th>Lateral resolution (XY)</th><th>Axial resolution (Z)</th><th>Spectral resolution</th><th>White light microscopy</th><th>XYZ travel range</th><th>Minimum step</th></tr></thead><tbody><tr><td>Motorized platform</td><td>RG Spectrometer / RG Pro</td><td>800–900 nm</td><td>2.5–3 µm</td><td>from 1.8 cm⁻¹ depending on RG Pro model</td><td>Reflected light with laser spot visualisation</td><td>30 × 30 × 30 mm</td><td>500 nm, automatic</td></tr><tr><td>Manual platform</td><td>RG Spectrometer / RG Pro</td><td>800–900 nm</td><td>2.5–3 µm</td><td>from 1.8 cm⁻¹ depending on RG Pro model</td><td>Reflected light with laser spot visualisation</td><td>30 × 30 × 30 mm</td><td>5 µm, manual</td></tr><tr><td>With focusing stage</td><td>RG Spectrometer / RG Pro</td><td>800–900 nm</td><td>2.5–3 µm</td><td>from 1.8 cm⁻¹ depending on RG Pro model</td><td>Optional</td><td>10 × 10 × 13 mm</td><td>5 µm, manual</td></tr></tbody></table></div><p class="tblhint">Scroll the table horizontally →</p>
 <div class="notebox mt-s">Resolution measured with a 100× objective at NA = 0.95. Control and data processing run in Miraspec software: 2D/3D XYZ mapping and time-resolved kinetic analysis, spectral deconvolution (PCR, SIMPLISMA-NNLS, MCR-ALS), cosmic ray removal, baseline correction and normalisation, control of laser power, integration time and scan step.</div>
 <h2 class="h-sec mt-l mb-s">Applications</h2>
 <div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Materials science and nanotechnology</h3><p class="t-sm">Graphene, carbon nanotubes, 2D materials, semiconductor heterostructures and lattice defects.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Biology, medicine and pharmaceuticals</h3><p class="t-sm">API distribution in tablets, single-cell studies, drug polymorphism, tissue diagnostics.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Polymer chemistry</h3><p class="t-sm">Microscopic analysis of phase separation, copolymers, inclusions and defects.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Geology and mineralogy</h3><p class="t-sm">Identification of micro-minerals, fluid and solid inclusions in rocks.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Forensics and art studies</h3><p class="t-sm">Micro-analysis of layered paints, pigments, inks and traces of hazardous substances.</p></div></div>
