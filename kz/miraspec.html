@@ -111,6 +111,31 @@
   .leftbtns{position:fixed;left:14px;bottom:16px;z-index:40;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
   .leftbtns,#fabRight{transition:opacity .18s ease,transform .18s ease,visibility .18s ease}
   .fabs-off{opacity:0;visibility:hidden;pointer-events:none;transform:translateY(10px)}
+  /* переключатель языка: тап-зона, свой слой и защита от наезда соседей */
+  .langsw{white-space:nowrap;flex:0 0 auto;position:relative;z-index:5}
+  .langsw a{position:relative;z-index:5;display:inline-block;padding:5px 6px;border-radius:7px;line-height:1;cursor:pointer}
+  .langsw a:hover{color:var(--accent)}
+  .langsw a.on{color:var(--ink);background:var(--soft)}
+  /* шапка: ничего не выходит за пределы строки на узком десктопе */
+  .hdr nav{min-width:0}
+  @media(min-width:1024px) and (max-width:1365px){
+    .logo{height:52px;max-width:210px}
+    .hdr nav{gap:16px}
+    .hdr .nav-a{font-size:14px}
+  }
+  /* шапка: содержимое всегда помещается в строку, ничего не наезжает на переключатель языка */
+  @media(min-width:1024px) and (max-width:1279px){
+    .hdr-nav,.hdr-right{display:none!important}
+    .hdr-mob{display:flex!important}
+    #menu{display:block!important}
+    #overlay:not(.hidden){display:block!important}
+  }
+  @media(min-width:1280px){
+    .logo{height:60px;max-width:190px}
+    .hdr-nav{gap:14px}
+    .hdr .nav-a{font-size:13.5px}
+    .hdr-right{gap:12px}
+  }
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -120,13 +145,13 @@
     <a href="index.html" class="flex items-center shrink-0" aria-label="LabAnalyt">
       <img src="../images/logo-ru.png" alt="LabAnalyt" class="logo" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'text-xl font-extrabold',style:'color:var(--ink)',textContent:'LabAnalyt'}))">
     </a>
-    <nav class="hidden lg:flex items-center gap-6"><a href="index.html" class="nav-a whitespace-nowrap">Басты бет</a><a href="products.html" class="nav-a active whitespace-nowrap">Жабдық</a><a href="spare-parts.html" class="nav-a whitespace-nowrap">Қосалқы бөлшектер</a><a href="service.html" class="nav-a whitespace-nowrap">Сервис</a><a href="about.html" class="nav-a whitespace-nowrap">Біз туралы</a><a href="contacts.html" class="nav-a whitespace-nowrap">Байланыс</a></nav>
-    <div class="hidden lg:flex items-center gap-4">
+    <nav class="hdr-nav hidden lg:flex items-center gap-6"><a href="index.html" class="nav-a whitespace-nowrap">Басты бет</a><a href="products.html" class="nav-a active whitespace-nowrap">Жабдық</a><a href="spare-parts.html" class="nav-a whitespace-nowrap">Қосалқы бөлшектер</a><a href="service.html" class="nav-a whitespace-nowrap">Сервис</a><a href="about.html" class="nav-a whitespace-nowrap">Біз туралы</a><a href="contacts.html" class="nav-a whitespace-nowrap">Байланыс</a></nav>
+    <div class="hdr-right hidden lg:flex items-center gap-4">
       <span class="langsw flex items-center gap-1.5"><a href="../miraspec.html" class="">RU</a><span class="text-slate-300">/</span><a href="miraspec.html" class="on">KZ</a><span class="text-slate-300">/</span><a href="../en/miraspec.html" class="">EN</a></span>
       <a href="tel:+77074626711" class="font-bold text-[14px] whitespace-nowrap" style="color:var(--ink)">+7 707 462 6711</a>
       <button onclick="openLead('')" class="btn">Өтінім қалдыру</button>
     </div>
-    <div class="lg:hidden flex items-center gap-3">
+    <div class="hdr-mob lg:hidden flex items-center gap-3">
       <span class="langsw flex items-center gap-1.5"><a href="../miraspec.html" class="">RU</a><span class="text-slate-300">/</span><a href="miraspec.html" class="on">KZ</a><span class="text-slate-300">/</span><a href="../en/miraspec.html" class="">EN</a></span>
       <button id="burger" aria-label="Menu" class="p-1.5 -mr-1.5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#051045" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
