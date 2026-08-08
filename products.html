@@ -58,11 +58,11 @@
   .langsw a{font-size:13px;font-weight:700;color:#8DA2B3} .langsw a.on{color:var(--ink)}
   #menu{transition:transform .25s ease}
   /* логотипы */
-  .logo{height:40px;width:auto;display:block;max-width:230px}
-  .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
-  .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
+  .logo{height:52px;width:auto;display:block;max-width:300px}
+  .logo-m{height:44px;width:auto;display:block;max-width:250px}
+  .logo-f{height:42px;width:auto;display:block;max-width:250px;background:#fff;padding:6px 11px;border-radius:10px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:66px;max-width:360px}.logo-m{height:48px}.logo-f{height:50px}}
+  .hdr{height:86px} @media(min-width:768px){.hdr{height:104px}}
   /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
@@ -84,6 +84,18 @@
   .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  /* таблицы характеристик */
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:#fff}
+  .spectable{width:100%;border-collapse:collapse;min-width:720px}
+  .spectable th,.spectable td{padding:11px 14px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:left;vertical-align:top;font-size:13px;line-height:1.45;color:var(--body)}
+  .spectable th{background:var(--soft);color:var(--ink);font-weight:700;font-size:12.5px}
+  .spectable tr:last-child td{border-bottom:none}
+  .spectable th:last-child,.spectable td:last-child{border-right:none}
+  .spectable td:first-child{font-weight:700;color:var(--ink)}
+  .tblhint{font-size:12px;color:var(--body);margin-top:8px}
+  @media(min-width:1024px){.tblhint{display:none}.spectable th,.spectable td{font-size:13.5px;padding:12px 16px}}
+  .ln-mark{height:14px;width:auto;display:inline-block;vertical-align:-2px}
+  @media(min-width:1024px){.ln-mark{height:16px}}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -117,47 +129,14 @@
       <button onclick="openLead('')" class="btn w-full">Оставить заявку</button>
     </div>
   </nav>
-</aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7"><div class="text-center max-w-3xl mx-auto mb-5"><p class="t-eyebrow mb-2">Lightnovo · Дания</p><h2 class="t-h2">Раман-спектрометры и микроскопы Lightnovo</h2><p class="t-body mt-2 max-w-3xl mx-auto">Lightnovo — компания из Дании, основанная в 2019 году как ответвление Технического университета Дании. Её цель — высокопроизводительные рамановские спектрометры и микроскопы в самых компактных в мире размерах без ущерба для производительности. LabAnalyt поставляет приборы и программное обеспечение Lightnovo в Астане и по всему Казахстану.</p></div><div class="g-cards"><a href="miniraman.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miniraman-cover.webp</span><img src="images/miniraman-cover.webp" alt="Раман-спектрометр miniRaman" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-спектрометр miniRaman</h3><p class="t-sm">Самый компактный в мире Раман-спектрометр исследовательского класса</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="miniraman-pro.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miniraman-pro-cover.webp</span><img src="images/miniraman-pro-cover.webp" alt="Раман-спектрометр miniRaman Pro" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-спектрометр miniRaman Pro</h3><p class="t-sm">Портативный спектрометр повышенной мощности и точности</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="miniraman-microscope.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miniraman-microscope-cover.webp</span><img src="images/miniraman-microscope-cover.webp" alt="Раман-микроскоп miniRaman" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-микроскоп miniRaman</h3><p class="t-sm">Самый маленький в мире конфокальный модульный Раман-микроскоп</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="rg-spectrometer.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-spectrometer-cover.webp</span><img src="images/rg-spectrometer-cover.webp" alt="Раман-спектрометр RG" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-спектрометр RG</h3><p class="t-sm">Исследовательский спектрометр высокого разрешения, 5 длин волн</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="rg-pro.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-cover.webp</span><img src="images/rg-pro-cover.webp" alt="Раман-спектрометр RG Pro" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-спектрометр RG Pro</h3><p class="t-sm">Флагманский спектрометр ультравысокой точности с охлаждаемым детектором</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="rg-microscope.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-microscope-cover.webp</span><img src="images/rg-microscope-cover.webp" alt="Раман-микроскоп RG" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-микроскоп RG</h3><p class="t-sm">Исследовательский конфокальный микроскоп с 2D/3D-картированием</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="oem.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-cover.webp</span><img src="images/oem-cover.webp" alt="OEM-решения Lightnovo" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">OEM-решения Lightnovo</h3><p class="t-sm">Модульные блоки Раман-спектроскопии для интеграции в ваше оборудование</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="miraspec.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspec-cover.webp</span><img src="images/miraspec-cover.webp" alt="ПО Miraspec" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">ПО Miraspec</h3><p class="t-sm">ПО для управления приборами и анализа спектральных данных</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="miraspecflow.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspecflow-cover.webp</span><img src="images/miraspecflow-cover.webp" alt="ПО MiraspecFlow" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">ПО MiraspecFlow</h3><p class="t-sm">Платформа стандартизированных рабочих процессов и отчётности</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a></div><div style="height:34px"></div><div class="text-center max-w-2xl mx-auto mb-5">
+</aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7"><div class="text-center max-w-3xl mx-auto mb-5"><p class="t-eyebrow mb-2"><img src="images/lightnovo-wordmark.png" alt="Lightnovo" class="ln-mark" onerror="this.replaceWith(document.createTextNode('LIGHTNOVO'))"> · Дания</p><h2 class="t-h2">Раман-спектрометры и микроскопы Lightnovo</h2><p class="t-body mt-2 max-w-3xl mx-auto">Компания Lightnovo, созданная в 2019 году командой энтузиастов, объединённых целью произвести революцию в области рамановской спектроскопии с помощью инновационных высокоэффективных решений, является ответвлением от Технического университета Дании. Наша цель — предоставлять высокопроизводительные рамановские спектрометры и микроскопы в самых компактных в мире размерах без ущерба для производительности.</p><p class="tagline" style="text-align:center">Рамановская спектроскопия для всех: демократизируйте возможности высокоточной рамановской спектроскопии на благо человечества.</p><p class="tagline" style="text-align:center">Рамановская спектроскопия для всех: демократизируйте возможности высокоточной рамановской спектроскопии на благо человечества.</p></div><div class="g-cards"><a href="miniraman.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miniraman-cover.webp</span><img src="images/miniraman-cover.webp" alt="Раман-спектрометр miniRaman" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-спектрометр miniRaman</h3><p class="t-sm">Самый компактный в мире Раман-спектрометр исследовательского класса</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="miniraman-pro.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miniraman-pro-cover.webp</span><img src="images/miniraman-pro-cover.webp" alt="Раман-спектрометр miniRaman Pro" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-спектрометр miniRaman Pro</h3><p class="t-sm">Портативный спектрометр повышенной мощности и точности</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="miniraman-microscope.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miniraman-microscope-cover.webp</span><img src="images/miniraman-microscope-cover.webp" alt="Раман-микроскоп miniRaman" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-микроскоп miniRaman</h3><p class="t-sm">Самый маленький в мире конфокальный модульный Раман-микроскоп</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="rg-spectrometer.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-spectrometer-cover.webp</span><img src="images/rg-spectrometer-cover.webp" alt="Раман-спектрометр RG" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-спектрометр RG</h3><p class="t-sm">Исследовательский спектрометр высокого разрешения, 5 длин волн</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="rg-pro.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-pro-cover.webp</span><img src="images/rg-pro-cover.webp" alt="Раман-спектрометр RG Pro" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-спектрометр RG Pro</h3><p class="t-sm">Флагманский спектрометр ультравысокой точности с охлаждаемым детектором</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="rg-microscope.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">rg-microscope-cover.webp</span><img src="images/rg-microscope-cover.webp" alt="Раман-микроскоп RG" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">Раман-микроскоп RG</h3><p class="t-sm">Исследовательский конфокальный микроскоп с 2D/3D-картированием</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="oem.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">oem-cover.webp</span><img src="images/oem-cover.webp" alt="OEM-решения Lightnovo" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">OEM-решения Lightnovo</h3><p class="t-sm">Модульные блоки Раман-спектроскопии для интеграции в ваше оборудование</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="miraspec.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspec-cover.webp</span><img src="images/miraspec-cover.webp" alt="ПО Miraspec" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">ПО Miraspec</h3><p class="t-sm">ПО для управления приборами и анализа спектральных данных</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a><a href="miraspecflow.html" class="card overflow-hidden block"><div class="ph" style="aspect-ratio:4/3"><span class="lbl">miraspecflow-cover.webp</span><img src="images/miraspecflow-cover.webp" alt="ПО MiraspecFlow" loading="lazy" onerror="this.remove()"></div><div class="p-3.5"><h3 class="t-h3 mb-1">ПО MiraspecFlow</h3><p class="t-sm">Платформа стандартизированных рабочих процессов и отчётности</p><span class="backlink" style="display:inline-block;margin-top:8px">Подробнее →</span></div></a></div><div style="height:34px"></div><div class="text-center max-w-2xl mx-auto mb-5">
       <p class="t-eyebrow mb-2">Оборудование</p>
       <h2 class="t-h2">Категории лабораторного оборудования</h2><p class="t-body mt-2 max-w-2xl mx-auto">Приборы для аналитических и исследовательских лабораторий.</p></div><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 md:gap-3"><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Молекулярная спектрометрия</h3>
+        <h3 class="t-h3 mb-1">Спектрометрия</h3>
         <p class="t-sm">УФ-Вид, ИК, ААС, флуоресценция</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Элементный анализ</h3>
-        <p class="t-sm">CHNS/O-анализаторы</p>
       </div><div class="card p-3.5">
         <h3 class="t-h3 mb-1">Хроматография</h3>
         <p class="t-sm">ВЭЖХ, газовая, ионная</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Клеточный анализ</h3>
-        <p class="t-sm">Проточная цитометрия</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Рентгеноспектральный анализ</h3>
-        <p class="t-sm">РФА и дифракция (XRD)</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Анализаторы частиц</h3>
-        <p class="t-sm">Размер и заряд частиц</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Электрохимические методы</h3>
-        <p class="t-sm">Титраторы, ионометры</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Материаловедение</h3>
-        <p class="t-sm">Микроскопия, твёрдость</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Термический анализ</h3>
-        <p class="t-sm">ДСК, ТГА, ДТА</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Газовые генераторы</h3>
-        <p class="t-sm">Азот, водород, калибровка</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Системы очистки воды</h3>
-        <p class="t-sm">Вода I–III типа</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Вакуумные насосы</h3>
-        <p class="t-sm">Насосы и детекторы утечки</p>
-      </div><div class="card p-3.5">
-        <h3 class="t-h3 mb-1">Пробоподготовка</h3>
-        <p class="t-sm">Мельницы, прессы, разложение</p>
       </div></div><div class="text-center mt-6"><button onclick="openLead('Оборудование (прибор)')" class="btn">Оставить заявку</button></div></div></main>
 <footer class="mt-auto" style="background:var(--ink)">
   <div class="wrap py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-white/60 text-[13px]">

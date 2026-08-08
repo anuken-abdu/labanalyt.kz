@@ -58,11 +58,11 @@
   .langsw a{font-size:13px;font-weight:700;color:#8DA2B3} .langsw a.on{color:var(--ink)}
   #menu{transition:transform .25s ease}
   /* логотипы */
-  .logo{height:40px;width:auto;display:block;max-width:230px}
-  .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
-  .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
+  .logo{height:52px;width:auto;display:block;max-width:300px}
+  .logo-m{height:44px;width:auto;display:block;max-width:250px}
+  .logo-f{height:42px;width:auto;display:block;max-width:250px;background:#fff;padding:6px 11px;border-radius:10px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:66px;max-width:360px}.logo-m{height:48px}.logo-f{height:50px}}
+  .hdr{height:86px} @media(min-width:768px){.hdr{height:104px}}
   /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
@@ -74,16 +74,24 @@
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
   .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
   @media(min-width:1024px){.tagline{font-size:18px}}
-  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
-  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
-  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
-  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
   .acclist{list-style:none;padding:0;margin:0}
   .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
   .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
   .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  /* таблицы характеристик */
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:#fff}
+  .spectable{width:100%;border-collapse:collapse;min-width:720px}
+  .spectable th,.spectable td{padding:11px 14px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:left;vertical-align:top;font-size:13px;line-height:1.45;color:var(--body)}
+  .spectable th{background:var(--soft);color:var(--ink);font-weight:700;font-size:12.5px}
+  .spectable tbody tr:last-child td{border-bottom:none}
+  .spectable th:last-child,.spectable td:last-child{border-right:none}
+  .spectable td:first-child{font-weight:700;color:var(--ink)}
+  .tblhint{font-size:12px;color:var(--body);margin-top:8px}
+  @media(min-width:1024px){.tblhint{display:none}.spectable th,.spectable td{font-size:13.5px;padding:12px 16px}}
+  .ln-mark{height:14px;width:auto;display:inline-block;vertical-align:-2px}
+  @media(min-width:1024px){.ln-mark{height:16px}}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -119,7 +127,7 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="products.html" class="backlink">← Оборудование</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · Раман-микроскопы</p>
+<p class="t-eyebrow mt-s mb-2"><img src="images/lightnovo-wordmark.png" alt="Lightnovo" class="ln-mark" onerror="this.replaceWith(document.createTextNode('LIGHTNOVO'))"> · Раман-микроскопы</p>
 <h1 class="t-h2">Раман-микроскоп miniRaman</h1>
 <p class="tagline">Самый маленький в мире конфокальный и модульный Раман-микроскоп</p>
 <p class="t-body mt-3 max-w-3xl">Компактная модульная система исследования материалов на базе спектрометров серии miniRaman. Встроенный патентованный референсный канал обеспечивает постоянную калибровку по длине волны и интенсивности лазера — это гарантирует высокую оптическую светосилу, точность волновых чисел и воспроизводимость спектров.</p>
@@ -131,11 +139,7 @@
 <h2 class="h-sec mt-l mb-s">Ключевые преимущества</h2>
 <div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Самый компактный конфокальный микроскоп</h3><p class="t-sm">Габариты всей системы — 175 × 180 × 410 мм.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Запатентованная непрерывная калибровка</h3><p class="t-sm">Автоматическая компенсация дрейфа длины волны лазера в реальном времени.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Высокое пространственное разрешение</h3><p class="t-sm">Субмикронное латеральное разрешение 800–900 нм и аксиальная конфокальность 2,5–3 мкм.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Модульность и гибкость</h3><p class="t-sm">Работа в прямом (up-right) и инвертированном (inverted) положении.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Визуализация в реальном времени</h3><p class="t-sm">Микроскопия в отражённом свете с одновременным отображением пятна лазера на образце.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Мощное спектральное картирование</h3><p class="t-sm">Автоматическое 2D/3D химическое картирование по координатам XYZ и во времени.</p></div></div>
 <h2 class="h-sec mt-l mb-s">Модификации и характеристики</h2>
-<div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3">Моторизованная платформа</h3><div class="spectbl"><div class="specrow"><span class="speck">Совместимые спектрометры</span><span class="specv">miniRaman / miniRaman Pro</span></div><div class="specrow"><span class="speck">Латеральное разрешение (XY)</span><span class="specv">800–900 нм</span></div><div class="specrow"><span class="speck">Аксиальное разрешение (Z)</span><span class="specv">2,5–3 мкм</span></div><div class="specrow"><span class="speck">Микроскопия белого света</span><span class="specv">Отражённый свет с визированием пятна лазера</span></div><div class="specrow"><span class="speck">Перемещение XYZ</span><span class="specv">30 × 30 × 30 мм</span></div><div class="specrow"><span class="speck">Минимальный шаг</span><span class="specv">500 нм</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3">Ручная платформа</h3><div class="spectbl"><div class="specrow"><span class="speck">Совместимые спектрометры</span><span class="specv">miniRaman / miniRaman Pro</span></div><div class="specrow"><span class="speck">Латеральное разрешение (XY)</span><span class="specv">800–900 нм</span></div><div class="specrow"><span class="speck">Аксиальное разрешение (Z)</span><span class="specv">2,5–3 мкм</span></div><div class="specrow"><span class="speck">Микроскопия белого света</span><span class="specv">Отражённый свет с визированием пятна лазера</span></div><div class="specrow"><span class="speck">Перемещение XYZ</span><span class="specv">30 × 30 × 30 мм</span></div><div class="specrow"><span class="speck">Минимальный шаг</span><span class="specv">5 мкм</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3">С фокусирующим столиком</h3><div class="spectbl"><div class="specrow"><span class="speck">Совместимые спектрометры</span><span class="specv">miniRaman / miniRaman Pro</span></div><div class="specrow"><span class="speck">Латеральное разрешение (XY)</span><span class="specv">800–900 нм</span></div><div class="specrow"><span class="speck">Аксиальное разрешение (Z)</span><span class="specv">2,5–3 мкм</span></div><div class="specrow"><span class="speck">Микроскопия белого света</span><span class="specv">Не входит в комплект</span></div><div class="specrow"><span class="speck">Перемещение XYZ</span><span class="specv">10 × 10 × 13 мм</span></div><div class="specrow"><span class="speck">Минимальный шаг</span><span class="specv">5 мкм</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-</div>
+<div class="tblwrap mt-s"><table class="spectable"><thead><tr><th>Модификация</th><th>Совместимые спектрометры</th><th>Латеральное разрешение (XY)</th><th>Аксиальное разрешение (Z)</th><th>Микроскопия белого света</th><th>Перемещение XYZ</th><th>Минимальный шаг</th></tr></thead><tbody><tr><td>Моторизованная платформа</td><td>miniRaman / miniRaman Pro</td><td>800–900 нм</td><td>2,5–3 мкм</td><td>Отражённый свет с визированием пятна лазера</td><td>30 × 30 × 30 мм</td><td>500 нм</td></tr><tr><td>Ручная платформа</td><td>miniRaman / miniRaman Pro</td><td>800–900 нм</td><td>2,5–3 мкм</td><td>Отражённый свет с визированием пятна лазера</td><td>30 × 30 × 30 мм</td><td>5 мкм</td></tr><tr><td>С фокусирующим столиком</td><td>miniRaman / miniRaman Pro</td><td>800–900 нм</td><td>2,5–3 мкм</td><td>Не входит в комплект</td><td>10 × 10 × 13 мм</td><td>5 мкм</td></tr></tbody></table></div><p class="tblhint">Таблица прокручивается по горизонтали →</p>
 <div class="notebox mt-s">Все платформы работают в прямой и инвертированной конфигурации. Разрешение измерено при использовании объектива 100× с числовой апертурой NA = 0,95.</div>
 <h2 class="h-sec mt-l mb-s">Области применения</h2>
 <div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Биология и медицина</h3><p class="t-sm">Исследование отдельных клеток и тканей, фармацевтических препаратов, косметики, диагностических биомаркеров.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Нанотехнологии и полупроводники</h3><p class="t-sm">Спектроскопия графена и нанотрубок, проверка дефектов в полупроводниковых структурах.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Полимеры и химическая промышленность</h3><p class="t-sm">Микроскопический анализ фазовых разделений, распределения компонентов и включений.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Геология и минералогия</h3><p class="t-sm">Идентификация микроминералов и флюидных включений в породах.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Криминалистика и искусствоведение</h3><p class="t-sm">Микроанализ пигментов, красителей, чернил, следов веществ и контрафакта.</p></div></div>

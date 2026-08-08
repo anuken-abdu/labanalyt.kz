@@ -58,11 +58,11 @@
   .langsw a{font-size:13px;font-weight:700;color:#8DA2B3} .langsw a.on{color:var(--ink)}
   #menu{transition:transform .25s ease}
   /* логотипы */
-  .logo{height:40px;width:auto;display:block;max-width:230px}
-  .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
-  .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
+  .logo{height:52px;width:auto;display:block;max-width:300px}
+  .logo-m{height:44px;width:auto;display:block;max-width:250px}
+  .logo-f{height:42px;width:auto;display:block;max-width:250px;background:#fff;padding:6px 11px;border-radius:10px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:66px;max-width:360px}.logo-m{height:48px}.logo-f{height:50px}}
+  .hdr{height:86px} @media(min-width:768px){.hdr{height:104px}}
   /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
@@ -74,16 +74,24 @@
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
   .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
   @media(min-width:1024px){.tagline{font-size:18px}}
-  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
-  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
-  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
-  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
   .acclist{list-style:none;padding:0;margin:0}
   .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
   .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
   .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  /* таблицы характеристик */
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:#fff}
+  .spectable{width:100%;border-collapse:collapse;min-width:720px}
+  .spectable th,.spectable td{padding:11px 14px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:left;vertical-align:top;font-size:13px;line-height:1.45;color:var(--body)}
+  .spectable th{background:var(--soft);color:var(--ink);font-weight:700;font-size:12.5px}
+  .spectable tbody tr:last-child td{border-bottom:none}
+  .spectable th:last-child,.spectable td:last-child{border-right:none}
+  .spectable td:first-child{font-weight:700;color:var(--ink)}
+  .tblhint{font-size:12px;color:var(--body);margin-top:8px}
+  @media(min-width:1024px){.tblhint{display:none}.spectable th,.spectable td{font-size:13.5px;padding:12px 16px}}
+  .ln-mark{height:14px;width:auto;display:inline-block;vertical-align:-2px}
+  @media(min-width:1024px){.ln-mark{height:16px}}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -119,7 +127,7 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="products.html" class="backlink">← Оборудование</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · Исследовательские спектрометры</p>
+<p class="t-eyebrow mt-s mb-2"><img src="images/lightnovo-wordmark.png" alt="Lightnovo" class="ln-mark" onerror="this.replaceWith(document.createTextNode('LIGHTNOVO'))"> · Исследовательские спектрометры</p>
 <h1 class="t-h2">Раман-спектрометр RG</h1>
 <p class="tagline">Исследовательский Раман-спектрометр высокого разрешения</p>
 <p class="t-body mt-3 max-w-3xl">Серия портативных Раман-спектрометров исследовательского класса для наиболее сложных аналитических задач: высокое спектральное разрешение, широкий диапазон с захватом низкочастотной области и высокая чувствительность. В основе — пропускающая дифракционная оптика с эффективностью передачи света от образца к детектору до 85 %.</p>
@@ -131,13 +139,7 @@
 <h2 class="h-sec mt-l mb-s">Ключевые преимущества</h2>
 <div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Высокая оптическая эффективность</h3><p class="t-sm">Дифракционная оптика пропускающего типа даёт КПД системы до 85 % и отношение сигнал/шум до 1200:1 и выше.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Высокое спектральное разрешение</h3><p class="t-sm">Позволяет разделять близко расположенные пики и анализировать полиморфные формы веществ.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Широкий спектральный диапазон</h3><p class="t-sm">Захват сдвигов от низкочастотной области до высокочастотных колебаний — до 3700 см⁻¹.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Универсальность возбуждения</h3><p class="t-sm">Пять типов лазеров — от 405 нм до ближнего ИК 830 нм — под разные типы образцов.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Портативный исследовательский формат</h3><p class="t-sm">Вес всего 1,5 кг при габаритах 257 × 110 × 61 мм.</p></div></div>
 <h2 class="h-sec mt-l mb-s">Модификации и характеристики</h2>
-<div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3">RG Raman 405</h3><div class="spectbl"><div class="specrow"><span class="speck">Лазер</span><span class="specv">405 нм</span></div><div class="specrow"><span class="speck">Мощность на образце</span><span class="specv">10–70 мВт</span></div><div class="specrow"><span class="speck">Спектральный диапазон</span><span class="specv">90–3700 см⁻¹</span></div><div class="specrow"><span class="speck">Разрешение</span><span class="specv">4 / 5 / 6 см⁻¹</span></div><div class="specrow"><span class="speck">Сигнал/шум</span><span class="specv">1000:1</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3">RG Raman 532</h3><div class="spectbl"><div class="specrow"><span class="speck">Лазер</span><span class="specv">532 нм</span></div><div class="specrow"><span class="speck">Мощность на образце</span><span class="specv">10–100 мВт</span></div><div class="specrow"><span class="speck">Спектральный диапазон</span><span class="specv">80–3700 см⁻¹ (80–2040 см⁻¹ в версии HR)</span></div><div class="specrow"><span class="speck">Разрешение</span><span class="specv">4 / 5 / 6 см⁻¹ (2,3 / 3 / 3,7 см⁻¹ HR)</span></div><div class="specrow"><span class="speck">Сигнал/шум</span><span class="specv">1200:1</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3">RG Raman 638</h3><div class="spectbl"><div class="specrow"><span class="speck">Лазер</span><span class="specv">638 нм</span></div><div class="specrow"><span class="speck">Мощность на образце</span><span class="specv">5–75 мВт (свыше 330 мВт в версии Power)</span></div><div class="specrow"><span class="speck">Спектральный диапазон</span><span class="specv">70–3700 см⁻¹</span></div><div class="specrow"><span class="speck">Разрешение</span><span class="specv">4 / 5 / 6 см⁻¹</span></div><div class="specrow"><span class="speck">Сигнал/шум</span><span class="specv">1000:1</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3">RG Raman 785</h3><div class="spectbl"><div class="specrow"><span class="speck">Лазер</span><span class="specv">785 нм</span></div><div class="specrow"><span class="speck">Мощность на образце</span><span class="specv">5–95 мВт (свыше 500 мВт в версии Power)</span></div><div class="specrow"><span class="speck">Спектральный диапазон</span><span class="specv">70–2100 см⁻¹</span></div><div class="specrow"><span class="speck">Разрешение</span><span class="specv">3 / 4 / 5 см⁻¹</span></div><div class="specrow"><span class="speck">Сигнал/шум</span><span class="specv">1000:1, до 3000:1</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3">RG Raman 830</h3><div class="spectbl"><div class="specrow"><span class="speck">Лазер</span><span class="specv">830 нм</span></div><div class="specrow"><span class="speck">Мощность на образце</span><span class="specv">5–70 мВт (свыше 500 мВт в версии Power)</span></div><div class="specrow"><span class="speck">Спектральный диапазон</span><span class="specv">70–2400 см⁻¹</span></div><div class="specrow"><span class="speck">Разрешение</span><span class="specv">3 / 4 / 5 см⁻¹</span></div><div class="specrow"><span class="speck">Сигнал/шум</span><span class="specv">900:1, до 2500:1</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-</div>
+<div class="tblwrap mt-s"><table class="spectable"><thead><tr><th>Модификация</th><th>Длина волны лазера</th><th>Мощность на образце</th><th>Спектральный диапазон</th><th>Спектральное разрешение</th><th>Отношение сигнал/шум (SNR)</th></tr></thead><tbody><tr><td>RG Raman 405</td><td>405 нм</td><td>10–70 мВт</td><td>90–3700 см⁻¹</td><td>4 / 5 / 6 см⁻¹</td><td>1000:1</td></tr><tr><td>RG Raman 532</td><td>532 нм</td><td>10–100 мВт</td><td>80–3700 см⁻¹ (80–2040 см⁻¹ в версии HR)</td><td>4 / 5 / 6 см⁻¹ (2,3 / 3 / 3,7 см⁻¹ HR)</td><td>1200:1</td></tr><tr><td>RG Raman 638</td><td>638 нм</td><td>5–75 мВт (свыше 330 мВт в версии Power)</td><td>70–3700 см⁻¹</td><td>4 / 5 / 6 см⁻¹</td><td>1000:1</td></tr><tr><td>RG Raman 785</td><td>785 нм</td><td>5–95 мВт (свыше 500 мВт в версии Power)</td><td>70–2100 см⁻¹</td><td>3 / 4 / 5 см⁻¹</td><td>1000:1, до 3000:1</td></tr><tr><td>RG Raman 830</td><td>830 нм</td><td>5–70 мВт (свыше 500 мВт в версии Power)</td><td>70–2400 см⁻¹</td><td>3 / 4 / 5 см⁻¹</td><td>900:1, до 2500:1</td></tr></tbody></table></div><p class="tblhint">Таблица прокручивается по горизонтали →</p>
 <div class="notebox mt-s">Опции под заказ: ослабление лазерного излучения до десятых долей мВт для светочувствительных образцов; модификация с увеличенной мощностью для сверхслабых сигналов; линейная фокусировка вместо точечной для предотвращения локального нагрева неоднородных образцов; защищённый корпус Operator со степенью защиты IP67 и стойкостью к падениям.</div>
 <h2 class="h-sec mt-l mb-s">Области применения</h2>
 <div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Академические и индустриальные R&amp;D</h3><p class="t-sm">Исследование перспективных материалов, полимеров, наноструктур, графена.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Фармацевтический анализ</h3><p class="t-sm">Идентификация кристаллической структуры, обнаружение фазовых переходов и полиморфизма.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Биомедицинские исследования</h3><p class="t-sm">SERS-анализ, изучение биологических тканей и жидких биопсий.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Экспертиза и криминалистика</h3><p class="t-sm">Неразрушающий анализ токсинов, взрывчатых веществ, пигментов и предметов искусства.</p></div></div>

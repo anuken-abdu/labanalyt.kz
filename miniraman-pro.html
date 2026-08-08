@@ -58,11 +58,11 @@
   .langsw a{font-size:13px;font-weight:700;color:#8DA2B3} .langsw a.on{color:var(--ink)}
   #menu{transition:transform .25s ease}
   /* логотипы */
-  .logo{height:40px;width:auto;display:block;max-width:230px}
-  .logo-m{height:36px;width:auto;display:block;max-width:200px}
-  .logo-f{height:34px;width:auto;display:block;max-width:200px;background:#fff;padding:5px 9px;border-radius:9px;box-sizing:content-box}
-  @media(min-width:768px){.logo{height:50px;max-width:280px}.logo-f{height:38px}}
-  .hdr{height:72px} @media(min-width:768px){.hdr{height:82px}}
+  .logo{height:52px;width:auto;display:block;max-width:300px}
+  .logo-m{height:44px;width:auto;display:block;max-width:250px}
+  .logo-f{height:42px;width:auto;display:block;max-width:250px;background:#fff;padding:6px 11px;border-radius:10px;box-sizing:content-box}
+  @media(min-width:768px){.logo{height:66px;max-width:360px}.logo-m{height:48px}.logo-f{height:50px}}
+  .hdr{height:86px} @media(min-width:768px){.hdr{height:104px}}
   /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
@@ -74,16 +74,24 @@
   .backlink{font-size:13px;font-weight:700;color:var(--accent)}
   .tagline{font-size:16px;font-weight:700;color:var(--teal-d);line-height:1.4;margin-top:6px}
   @media(min-width:1024px){.tagline{font-size:18px}}
-  .spectbl{margin-top:10px;border-top:1px solid var(--line)}
-  .specrow{display:flex;gap:10px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}
-  .speck{font-size:12px;color:var(--body);flex:0 0 42%;line-height:1.4}
-  .specv{font-size:12.5px;color:var(--ink);font-weight:600;text-align:right;flex:1;line-height:1.4}
   .acclist{list-style:none;padding:0;margin:0}
   .acclist li{position:relative;padding-left:18px;font-size:13.5px;color:var(--body);line-height:1.55;margin-bottom:8px}
   .acclist li:before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
   .notebox{border-left:3px solid var(--teal);background:var(--soft);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--body);line-height:1.6}
   .ctabox{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:20px}
   .ctarow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  /* таблицы характеристик */
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;background:#fff}
+  .spectable{width:100%;border-collapse:collapse;min-width:720px}
+  .spectable th,.spectable td{padding:11px 14px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:left;vertical-align:top;font-size:13px;line-height:1.45;color:var(--body)}
+  .spectable th{background:var(--soft);color:var(--ink);font-weight:700;font-size:12.5px}
+  .spectable tbody tr:last-child td{border-bottom:none}
+  .spectable th:last-child,.spectable td:last-child{border-right:none}
+  .spectable td:first-child{font-weight:700;color:var(--ink)}
+  .tblhint{font-size:12px;color:var(--body);margin-top:8px}
+  @media(min-width:1024px){.tblhint{display:none}.spectable th,.spectable td{font-size:13.5px;padding:12px 16px}}
+  .ln-mark{height:14px;width:auto;display:inline-block;vertical-align:-2px}
+  @media(min-width:1024px){.ln-mark{height:16px}}
   .fab{border-radius:9999px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:transform .2s} .fab:hover{transform:scale(1.06)}
 </style>
 </head>
@@ -119,7 +127,7 @@
   </nav>
 </aside><main class="flex-1"><div class="wrap w-full py-6 md:py-7">
 <a href="products.html" class="backlink">← Оборудование</a>
-<p class="t-eyebrow mt-s mb-2">Lightnovo · Портативные спектрометры</p>
+<p class="t-eyebrow mt-s mb-2"><img src="images/lightnovo-wordmark.png" alt="Lightnovo" class="ln-mark" onerror="this.replaceWith(document.createTextNode('LIGHTNOVO'))"> · Портативные спектрометры</p>
 <h1 class="t-h2">Раман-спектрометр miniRaman Pro</h1>
 <p class="tagline">Портативный Раман-спектрометр повышенной мощности и точности</p>
 <p class="t-body mt-3 max-w-3xl">Продвинутая версия флагманского портативного Раман-спектрометра Lightnovo. Прибор сочетает портативность ручного устройства с высочайшей стабильностью и производительностью. Улучшенные лазеры с термостабилизацией и повышенной мощностью излучения дают глубокую детализацию спектров и исключительную воспроизводимость результатов даже в сложных условиях.</p>
@@ -131,11 +139,7 @@
 <h2 class="h-sec mt-l mb-s">Ключевые преимущества</h2>
 <div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Улучшенная стабильность лазера</h3><p class="t-sm">Лазеры с температурной стабилизацией гарантируют точность волновых чисел и неизменность спектральных данных во времени.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Запатентованный калибровочный канал</h3><p class="t-sm">Встроенный референсный канал непрерывно компенсирует дрейф длины волны, исключая постоянные ручные калибровки.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Повышенная мощность на образце</h3><p class="t-sm">Регулируемая мощность до 400 мВт — измерения на слабо рассеивающих и глубоко расположенных объектах.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Расширенный спектральный диапазон</h3><p class="t-sm">Работа от 100 см⁻¹ — анализ низкочастотных колебаний кристаллической решётки и полиморфов.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Высокая чувствительность</h3><p class="t-sm">Оптическая система сопоставима по качеству сигнала со стационарными приборами с охлаждаемыми CCD-детекторами.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Портативность и автономность</h3><p class="t-sm">Компактный корпус, питание от аккумулятора, подключение к ПК или смартфону через Bluetooth и USB.</p></div></div>
 <h2 class="h-sec mt-l mb-s">Модификации и характеристики</h2>
-<div class="g-cards">
-<div class="card p-3.5"><h3 class="t-h3">PRO miniRaman 785</h3><div class="spectbl"><div class="specrow"><span class="speck">Лазер</span><span class="specv">785 нм</span></div><div class="specrow"><span class="speck">Мощность на образце</span><span class="specv">5–400 мВт (стандарт), 0,5–70 мВт (SERS)</span></div><div class="specrow"><span class="speck">Спектральный диапазон</span><span class="specv">100–3100 см⁻¹</span></div><div class="specrow"><span class="speck">Разрешение</span><span class="specv">от 7 см⁻¹</span></div><div class="specrow"><span class="speck">Питание и связь</span><span class="specv">Аккумулятор / USB-C / Bluetooth</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3">PRO Dual miniRaman 785/660</h3><div class="spectbl"><div class="specrow"><span class="speck">Лазеры</span><span class="specv">785 нм / 660 нм</span></div><div class="specrow"><span class="speck">Мощность на образце</span><span class="specv">5–400 мВт (785), 5–60 мВт (660)</span></div><div class="specrow"><span class="speck">Спектральный диапазон</span><span class="specv">100–3100 см⁻¹ (785), 2700–3700 см⁻¹ (660)</span></div><div class="specrow"><span class="speck">Разрешение</span><span class="specv">от 7 см⁻¹</span></div><div class="specrow"><span class="speck">Питание и связь</span><span class="specv">Аккумулятор / USB-C / Bluetooth</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-<div class="card p-3.5"><h3 class="t-h3">PRO miniRaman 830</h3><div class="spectbl"><div class="specrow"><span class="speck">Лазер</span><span class="specv">830 нм — подавление флуоресценции</span></div><div class="specrow"><span class="speck">Мощность на образце</span><span class="specv">5–400 мВт</span></div><div class="specrow"><span class="speck">Спектральный диапазон</span><span class="specv">100–3100 см⁻¹</span></div><div class="specrow"><span class="speck">Разрешение</span><span class="specv">от 7 см⁻¹</span></div><div class="specrow"><span class="speck">Питание и связь</span><span class="specv">Аккумулятор / USB-C / Bluetooth</span></div></div><button onclick="openLead('Оборудование (прибор)')" class="btn-o w-full mt-3">Запросить цену</button></div>
-</div>
+<div class="tblwrap mt-s"><table class="spectable"><thead><tr><th>Модификация</th><th>Длина волны лазера</th><th>Мощность на образце</th><th>Спектральный диапазон</th><th>Спектральное разрешение</th><th>Питание и связь</th></tr></thead><tbody><tr><td>PRO miniRaman 785</td><td>785 нм</td><td>5–400 мВт (стандарт), 0,5–70 мВт (SERS)</td><td>100–3100 см⁻¹</td><td>от 7 см⁻¹</td><td>Аккумулятор / USB-C / Bluetooth</td></tr><tr><td>PRO Dual miniRaman 785/660</td><td>785 нм / 660 нм</td><td>5–400 мВт (785), 5–60 мВт (660)</td><td>100–3100 см⁻¹ (785), 2700–3700 см⁻¹ (660)</td><td>от 7 см⁻¹</td><td>Аккумулятор / USB-C / Bluetooth</td></tr><tr><td>PRO miniRaman 830</td><td>830 нм — подавление флуоресценции</td><td>5–400 мВт</td><td>100–3100 см⁻¹</td><td>от 7 см⁻¹</td><td>Аккумулятор / USB-C / Bluetooth</td></tr></tbody></table></div><p class="tblhint">Таблица прокручивается по горизонтали →</p>
 <div class="notebox mt-s">Модель 830 нм разработана для сложных, сильно флуоресцирующих образцов: сырая нефть, биоткани, цветные полимеры, растительные экстракты. Возбуждение в ближнем ИК-диапазоне снижает фоновую флуоресценцию до минимума, сохраняя полезный Рамановский сигнал.</div>
 <h2 class="h-sec mt-l mb-s">Области применения</h2>
 <div class="g-cards"><div class="card p-3.5"><h3 class="t-h3 mb-1">Количественный и качественный анализ</h3><p class="t-sm">Точное определение концентраций компонентов в сложных смесях.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Фармацевтика и медицина</h3><p class="t-sm">Экспресс-контроль входящего сырья, анализ полиморфизма ЛС, неинвазивная диагностика.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Полевые исследования и криминалистика</h3><p class="t-sm">Мгновенная идентификация неизвестных химикатов, взрывчатых, токсичных и наркотических веществ.</p></div><div class="card p-3.5"><h3 class="t-h3 mb-1">Нефтехимия и геология</h3><p class="t-sm">Анализ нефтепродуктов, топлив, минералов и горных пород.</p></div></div>
