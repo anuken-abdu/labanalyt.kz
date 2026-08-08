@@ -3,6 +3,15 @@
   <url>
     <loc>https://labanalyt.kz/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/"/>
     <priority>1.0</priority>
@@ -10,6 +19,7 @@
   <url>
     <loc>https://labanalyt.kz/en/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/"/>
     <priority>1.0</priority>
@@ -17,6 +27,15 @@
   <url>
     <loc>https://labanalyt.kz/products.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/products.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/products.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/products.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/products.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/products.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/products.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/products.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/products.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/products.html"/>
     <priority>0.8</priority>
@@ -24,6 +43,7 @@
   <url>
     <loc>https://labanalyt.kz/en/products.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/products.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/products.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/products.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/products.html"/>
     <priority>0.8</priority>
@@ -31,6 +51,15 @@
   <url>
     <loc>https://labanalyt.kz/spare-parts.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/spare-parts.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/spare-parts.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/spare-parts.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/spare-parts.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/spare-parts.html"/>
     <priority>0.8</priority>
@@ -38,6 +67,7 @@
   <url>
     <loc>https://labanalyt.kz/en/spare-parts.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/spare-parts.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/spare-parts.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/spare-parts.html"/>
     <priority>0.8</priority>
@@ -45,6 +75,15 @@
   <url>
     <loc>https://labanalyt.kz/service.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/service.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/service.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/service.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/service.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/service.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/service.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/service.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/service.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/service.html"/>
     <priority>0.8</priority>
@@ -52,6 +91,7 @@
   <url>
     <loc>https://labanalyt.kz/en/service.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/service.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/service.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/service.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/service.html"/>
     <priority>0.8</priority>
@@ -59,6 +99,15 @@
   <url>
     <loc>https://labanalyt.kz/about.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/about.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/about.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/about.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/about.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/about.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/about.html"/>
     <priority>0.8</priority>
@@ -66,6 +115,7 @@
   <url>
     <loc>https://labanalyt.kz/en/about.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/about.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/about.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/about.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/about.html"/>
     <priority>0.8</priority>
@@ -73,6 +123,15 @@
   <url>
     <loc>https://labanalyt.kz/contacts.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/contacts.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/contacts.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/contacts.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/contacts.html"/>
     <priority>0.8</priority>
@@ -80,6 +139,7 @@
   <url>
     <loc>https://labanalyt.kz/en/contacts.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/contacts.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/contacts.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/contacts.html"/>
     <priority>0.8</priority>
@@ -87,6 +147,15 @@
   <url>
     <loc>https://labanalyt.kz/miniraman.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/miniraman.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman.html"/>
     <priority>0.8</priority>
@@ -94,6 +163,7 @@
   <url>
     <loc>https://labanalyt.kz/en/miniraman.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman.html"/>
     <priority>0.8</priority>
@@ -101,6 +171,15 @@
   <url>
     <loc>https://labanalyt.kz/miniraman-pro.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman-pro.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/miniraman-pro.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman-pro.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman-pro.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman-pro.html"/>
     <priority>0.8</priority>
@@ -108,6 +187,7 @@
   <url>
     <loc>https://labanalyt.kz/en/miniraman-pro.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman-pro.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman-pro.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman-pro.html"/>
     <priority>0.8</priority>
@@ -115,6 +195,15 @@
   <url>
     <loc>https://labanalyt.kz/miniraman-microscope.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman-microscope.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/miniraman-microscope.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman-microscope.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman-microscope.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman-microscope.html"/>
     <priority>0.8</priority>
@@ -122,6 +211,7 @@
   <url>
     <loc>https://labanalyt.kz/en/miniraman-microscope.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miniraman-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miniraman-microscope.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miniraman-microscope.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miniraman-microscope.html"/>
     <priority>0.8</priority>
@@ -129,6 +219,15 @@
   <url>
     <loc>https://labanalyt.kz/rg-spectrometer.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-spectrometer.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-spectrometer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-spectrometer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-spectrometer.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/rg-spectrometer.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-spectrometer.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-spectrometer.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-spectrometer.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-spectrometer.html"/>
     <priority>0.8</priority>
@@ -136,6 +235,7 @@
   <url>
     <loc>https://labanalyt.kz/en/rg-spectrometer.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-spectrometer.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-spectrometer.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-spectrometer.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-spectrometer.html"/>
     <priority>0.8</priority>
@@ -143,6 +243,15 @@
   <url>
     <loc>https://labanalyt.kz/rg-pro.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-pro.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/rg-pro.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-pro.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-pro.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-pro.html"/>
     <priority>0.8</priority>
@@ -150,6 +259,7 @@
   <url>
     <loc>https://labanalyt.kz/en/rg-pro.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-pro.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-pro.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-pro.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-pro.html"/>
     <priority>0.8</priority>
@@ -157,6 +267,15 @@
   <url>
     <loc>https://labanalyt.kz/rg-microscope.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-microscope.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/rg-microscope.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-microscope.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-microscope.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-microscope.html"/>
     <priority>0.8</priority>
@@ -164,6 +283,7 @@
   <url>
     <loc>https://labanalyt.kz/en/rg-microscope.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-microscope.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-microscope.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-microscope.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-microscope.html"/>
     <priority>0.8</priority>
@@ -171,6 +291,15 @@
   <url>
     <loc>https://labanalyt.kz/oem.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/oem.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/oem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/oem.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/oem.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/oem.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/oem.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/oem.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/oem.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/oem.html"/>
     <priority>0.8</priority>
@@ -178,6 +307,7 @@
   <url>
     <loc>https://labanalyt.kz/en/oem.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/oem.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/oem.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/oem.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/oem.html"/>
     <priority>0.8</priority>
@@ -185,6 +315,15 @@
   <url>
     <loc>https://labanalyt.kz/miraspec.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspec.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miraspec.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspec.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miraspec.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/miraspec.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspec.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miraspec.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspec.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miraspec.html"/>
     <priority>0.8</priority>
@@ -192,6 +331,7 @@
   <url>
     <loc>https://labanalyt.kz/en/miraspec.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspec.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miraspec.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspec.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miraspec.html"/>
     <priority>0.8</priority>
@@ -199,6 +339,15 @@
   <url>
     <loc>https://labanalyt.kz/miraspecflow.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspecflow.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miraspecflow.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspecflow.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miraspecflow.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://labanalyt.kz/kz/miraspecflow.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspecflow.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miraspecflow.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspecflow.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miraspecflow.html"/>
     <priority>0.8</priority>
@@ -206,6 +355,7 @@
   <url>
     <loc>https://labanalyt.kz/en/miraspecflow.html</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://labanalyt.kz/miraspecflow.html"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/miraspecflow.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/miraspecflow.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/miraspecflow.html"/>
     <priority>0.8</priority>

@@ -7,10 +7,12 @@
 ================================================================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{if(localStorage.getItem("la_dw")==="1"){document.documentElement.className+=" dw";var m=document.querySelector('meta[name="viewport"]');if(m)m.setAttribute("content","width=1280");}}catch(e){}})();</script>
 <title>Раман-микроскоп RG — Lightnovo | LabAnalyt</title>
 <meta name="description" content="Исследовательский конфокальный микроскоп с 2D/3D-картированием. Поставка, установка и сервис в Астане и по Казахстану.">
 <link rel="canonical" href="https://labanalyt.kz/rg-microscope.html">
 <link rel="alternate" hreflang="ru" href="https://labanalyt.kz/rg-microscope.html">
+<link rel="alternate" hreflang="kk" href="https://labanalyt.kz/kz/rg-microscope.html">
 <link rel="alternate" hreflang="en" href="https://labanalyt.kz/en/rg-microscope.html">
 <link rel="alternate" hreflang="x-default" href="https://labanalyt.kz/rg-microscope.html">
 <meta property="og:type" content="website">
@@ -63,6 +65,13 @@
   .logo-f{height:42px;width:auto;display:block;max-width:250px;background:#fff;padding:6px 11px;border-radius:10px;box-sizing:content-box}
   @media(min-width:768px){.logo{height:66px;max-width:360px}.logo-m{height:48px}.logo-f{height:50px}}
   .hdr{height:86px} @media(min-width:768px){.hdr{height:104px}}
+  /* переключатель мобильной / полной версии */
+  .viewtgl{position:fixed;left:14px;bottom:16px;z-index:40;display:inline-flex;align-items:center;gap:7px;
+    border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12.5px;font-weight:700;
+    padding:9px 14px;border-radius:9999px;box-shadow:0 6px 18px rgba(5,16,69,.16);cursor:pointer}
+  .viewtgl svg{flex:0 0 auto}
+  @media(min-width:1024px){.viewtgl{display:none}}
+  html.dw .viewtgl{display:inline-flex;font-size:13px;padding:10px 16px}
   /* сетки и типографика продуктовых страниц */
   .g-photo{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   .g-cards{display:grid;grid-template-columns:1fr;gap:10px}
@@ -103,12 +112,12 @@
     </a>
     <nav class="hidden lg:flex items-center gap-6"><a href="index.html" class="nav-a whitespace-nowrap">Главная</a><a href="products.html" class="nav-a active whitespace-nowrap">Оборудование</a><a href="spare-parts.html" class="nav-a whitespace-nowrap">Запчасти</a><a href="service.html" class="nav-a whitespace-nowrap">Сервис</a><a href="about.html" class="nav-a whitespace-nowrap">О нас</a><a href="contacts.html" class="nav-a whitespace-nowrap">Контакты</a></nav>
     <div class="hidden lg:flex items-center gap-4">
-      <span class="langsw flex items-center gap-1.5"><a href="rg-microscope.html" class="on">RU</a><span class="text-slate-300">/</span><a href="en/rg-microscope.html" class="">EN</a></span>
+      <span class="langsw flex items-center gap-1.5"><a href="rg-microscope.html" class="on">RU</a><span class="text-slate-300">/</span><a href="kz/rg-microscope.html" class="">KZ</a><span class="text-slate-300">/</span><a href="en/rg-microscope.html" class="">EN</a></span>
       <a href="tel:+77074626711" class="font-bold text-[14px] whitespace-nowrap" style="color:var(--ink)">+7 707 462 6711</a>
       <button onclick="openLead('')" class="btn">Оставить заявку</button>
     </div>
     <div class="lg:hidden flex items-center gap-3">
-      <span class="langsw flex items-center gap-1.5"><a href="rg-microscope.html" class="on">RU</a><span class="text-slate-300">/</span><a href="en/rg-microscope.html" class="">EN</a></span>
+      <span class="langsw flex items-center gap-1.5"><a href="rg-microscope.html" class="on">RU</a><span class="text-slate-300">/</span><a href="kz/rg-microscope.html" class="">KZ</a><span class="text-slate-300">/</span><a href="en/rg-microscope.html" class="">EN</a></span>
       <button id="burger" aria-label="Menu" class="p-1.5 -mr-1.5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#051045" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
   </div>
@@ -206,6 +215,17 @@ function sendLead(f){
   closeLead(); return false;
 }
 document.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('a[href^="tel:"], a[href^="https://wa.me"]'):null; if(a) fireLeadConversion();},true);
+</script>
+
+<button id="viewToggle" class="viewtgl" onclick="toggleView()" aria-label="Полная версия"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Полная версия</button>
+<script>
+var LA_D="Полная версия",LA_M="Мобильная версия";
+function laLabel(){var b=document.getElementById("viewToggle");if(!b)return;b.lastChild.nodeValue=document.documentElement.classList.contains("dw")?LA_M:LA_D;}
+function toggleView(){try{var h=document.documentElement,on=h.classList.contains("dw"),m=document.querySelector('meta[name="viewport"]');
+if(on){h.classList.remove("dw");m.setAttribute("content","width=device-width, initial-scale=1");localStorage.setItem("la_dw","0");}
+else{h.classList.add("dw");m.setAttribute("content","width=1280");localStorage.setItem("la_dw","1");}
+laLabel();window.scrollTo(0,0);}catch(e){}}
+document.addEventListener("DOMContentLoaded",laLabel);
 </script>
 </body>
 </html>
