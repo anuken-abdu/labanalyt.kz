@@ -235,9 +235,11 @@ function laLabel(){var b=document.getElementById("viewToggle");if(!b)return;b.la
 function toggleView(){try{var h=document.documentElement,on=h.classList.contains("dw"),m=document.querySelector('meta[name="viewport"]');
 if(on){h.classList.remove("dw");m.setAttribute("content","width=device-width, initial-scale=1");localStorage.setItem("la_dw","0");}
 else{h.classList.add("dw");m.setAttribute("content","width=1280");localStorage.setItem("la_dw","1");}
-laLabel();window.scrollTo(0,0);}catch(e){}}
+laLabel();window.scrollTo(0,0);setTimeout(laBottom,60);}catch(e){}}
 document.addEventListener("DOMContentLoaded",laLabel);
-function laBottom(){var near=(window.innerHeight+window.scrollY)>=(document.body.scrollHeight-90);
+function laBottom(){var H=Math.max(document.documentElement.scrollHeight,document.body.scrollHeight);
+var scrollable=H>window.innerHeight+140;
+var near=scrollable&&(window.innerHeight+window.scrollY)>=(H-90);
 var els=[document.getElementById('leftBtns'),document.getElementById('fabRight')];
 els.forEach(function(e){if(e)e.classList.toggle('fabs-off',near);});}
 window.addEventListener('scroll',laBottom,{passive:true});
