@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- ===== Google Analytics / Google Ads — вставьте свои теги =====
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
-================================================================= -->
+<!-- Google tag (GTM-MCM6VWT9) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MCM6VWT9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{if(localStorage.getItem("la_dw")==="1"){document.documentElement.className+=" dw";var m=document.querySelector('meta[name="viewport"]');if(m)m.setAttribute("content","width=1280");}}catch(e){}})();</script>
@@ -228,7 +231,7 @@
 var LM=document.getElementById('leadModal');
 function openLead(type){ if(type){var s=LM.querySelector('[name=ltype]'); for(var i=0;i<s.options.length;i++){if(s.options[i].value.indexOf(type)>-1){s.selectedIndex=i;break;}}} LM.style.display='flex'; document.body.style.overflow='hidden'; }
 function closeLead(){ LM.style.display='none'; document.body.style.overflow=''; }
-function fireLeadConversion(){ try{ if(typeof gtag==='function'){ gtag('event','conversion',{'send_to':'AW-XXXXXXXXXX/XXXXXXXX'}); gtag('event','generate_lead'); } }catch(e){} }
+function fireLeadConversion(m){ try{ if(typeof gtag==='function'){ gtag('event','generate_lead',{method:m}); } }catch(e){} }
 function sendLead(f){
   var g=function(n){var el=f.querySelector('[name="'+n+'"]');return el?el.value.trim():'';};
   var name=g('name'),phone=g('phone'),ok=true;
@@ -242,11 +245,11 @@ function sendLead(f){
     +'%0A• Phone: '+encodeURIComponent(phone)
     +(email?'%0A• Email: '+encodeURIComponent(email):'')
     +(msg?'%0A• Details: '+encodeURIComponent(msg):'');
-  fireLeadConversion();
+  fireLeadConversion('form');
   window.open('https://wa.me/77074626711?text='+encodeURIComponent('Hello! 👋 ')+text,'_blank');
   closeLead(); return false;
 }
-document.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('a[href^="tel:"], a[href^="https://wa.me"]'):null; if(a) fireLeadConversion();},true);
+document.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('a[href^="tel:+77074626711"], a[href^="https://wa.me/77074626711"]'):null; if(a) fireLeadConversion(a.getAttribute('href').indexOf('tel:')===0?'phone':'whatsapp');},true);
 </script>
 
 <div class="leftbtns" id="leftBtns"><button id="backBtn" class="viewtgl" onclick="history.back()" aria-label="← Back">← Back</button><button id="viewToggle" class="viewtgl" onclick="toggleView()" aria-label="Desktop version"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop version</button></div>
