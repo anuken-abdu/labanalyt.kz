@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<!-- Google tag (GTM-MCM6VWT9) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MCM6VWT9"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-K3L9WXTJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
+  gtag('config', 'GTM-K3L9WXTJ');
+  gtag('config', 'AW-18578816533');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -217,7 +220,7 @@
 var LM=document.getElementById('leadModal');
 function openLead(type){ if(type){var s=LM.querySelector('[name=ltype]'); for(var i=0;i<s.options.length;i++){if(s.options[i].value.indexOf(type)>-1){s.selectedIndex=i;break;}}} LM.style.display='flex'; document.body.style.overflow='hidden'; }
 function closeLead(){ LM.style.display='none'; document.body.style.overflow=''; }
-function fireLeadConversion(m){ try{ if(typeof gtag==='function'){ gtag('event','generate_lead',{method:m}); } }catch(e){} }
+function fireLeadConversion(m){ try{ if(typeof gtag==='function'){ gtag('event','conversion',{'send_to':'AW-18578816533/qJQcCLGT0rkdEJX8iJtF'}); gtag('event','generate_lead',{method:m}); } }catch(e){} }
 function sendLead(f){
   var g=function(n){var el=f.querySelector('[name="'+n+'"]');return el?el.value.trim():'';};
   var name=g('name'),phone=g('phone'),ok=true;
